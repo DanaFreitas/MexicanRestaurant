@@ -1,0 +1,24 @@
+
+
+2/8
+
+Have finished design on figma. Will make here. should I make or import
+    If import, find substitiute for figma dev mode
+
+also incorporate sass
+
+2/9
+
+colors: greenish 005200
+        redish a80000
+fonts inter 
+        rye
+        actor, inter
+
+2/10 
+        insert the html tags for everything
+
+For the menus, should I do div,p or just p?
+
+
+sass --watch .
