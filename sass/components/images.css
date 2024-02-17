@@ -1,0 +1,16 @@
+.imagecontainer {
+  background: 255, 255, 0, 0.3;
+  opacity: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+}
+
+#buildinginside {
+  aspect-ratio: 1/1.5;
+}/*# sourceMappingURL=images.css.map */

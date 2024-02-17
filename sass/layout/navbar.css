@@ -1,0 +1,94 @@
+.header {
+  z-index: 10;
+  background-color: #005200;
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (min-width: 481px) {
+  .header__burgerholder {
+    display: none;
+  }
+}
+@media (pointer: fine) {
+  .header__hamburger:hover {
+    color: white;
+  }
+}
+.header_default--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  grid-area: p1;
+}
+
+.header__hamburger {
+  left: 0vw;
+  top: 0vw;
+  display: block;
+  z-index: 5;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.header__hamburger--hamburger-bit {
+  width: 3em;
+  height: 0.5em;
+  background-color: #a80000;
+  margin: 0.5em 0;
+  transition: 0.4s;
+}
+
+.show > .header__hamburger--hamburger-bit {
+  background-color: white;
+}
+
+.show #hamburger-bit-1 {
+  transform: translate(0, 1em) rotate(-45deg);
+  transition-duration: 500ms;
+}
+
+.show #hamburger-bit-2 {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
+.show #hamburger-bit-3 {
+  transform: translate(0, -1em) rotate(45deg);
+  transition-duration: 500ms;
+}
+
+.title {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 481px) {
+  .title {
+    font-size: 4rem;
+    flex: 1;
+    text-align: center;
+    margin: 0% 40% 0% 40%;
+  }
+  .fa-solid {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 481px) {
+  .header__burgerholder > .header__hamburger > * {
+    display: none;
+  }
+}
+.fa-solid {
+  font-size: 2em;
+  margin-top: 0.85em;
+  color: black;
+}
+
+@media (pointer: fine) {
+  .fa-solid:hover {
+    color: white;
+  }
+}/*# sourceMappingURL=navbar.css.map */

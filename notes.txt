@@ -22,3 +22,76 @@ For the menus, should I do div,p or just p?
 
 
 sass --watch .
+
+importing the navbar takes about half an hour...remember the @import
+
+fix header and nav
+        need to use flex? to place sied by side
+Have header     
+        nav nav 
+        the title
+     header
+
+
+transform: translateY(10rem);
+        margin-bottom: 10rem;
+
+        import sass to reduce opacity on images
+        restructure 7-1?
+
+2/11
+
+I need to reorganize the arhcitecture of the styles for article (and give a real name)
+
+I did learn about cover for background iamge
+
+have seperate container for the background image
+
+Try to modify the font weights. the eights for the buttons are too much.
+
+
+
+2/12
+
+relative: where "should" be then moved
+asbolute: compared to parent
+
+need to fix the headers. its being fixed
+
+seperate the header itseelf from the animating of the transition
+
+2/13
+
+shrink font size of title
+
+the bottom went too to the bottom. need to make responsive, but correctly
+
+issue: with the bottom section, because of the margin bottom, 
+it technically doesnt have a height. that is why the button is in a strange position. 
+
+button was part of wrong parent
+
+mixin isnt working
+
+2/14
+
+mixin works now, not sure what mistake was
+
+used height to make sure all of the sections have a good height
+
+work on the specific mixin more. figure out the children. chatgpt/previouswork
+
+2/15
+
+still work on opacity
+
+moved the buttons outside the background...not a good idea fo rhte opening?
+
+
+the children inheret the styles of the parent
+
+Need to add the footer. also add boxes for the secitons of text
+
+2/16
+
+align vertical justify horizontal. longer so hori

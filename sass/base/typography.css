@@ -1,7 +1,9 @@
-.Header {
+h1 {
   font-family: "Rye", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/*# sourceMappingURL=typography.css.map */
+p {
+  padding: 1rem;
+}/*# sourceMappingURL=typography.css.map */

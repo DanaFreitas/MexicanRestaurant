@@ -1,4 +1,10 @@
-@import "base/base.scss";
+@import "base/global.scss";
 @import "base/typography.scss";
-
-    
+@import "components/menusliding.scss";
+@import "components/buttons.scss";
+@import "layout/navbar.scss";
+@import "layout/section.scss";
+@import "layout/footer.scss";
+@import "abstracts/variables.scss";
+@import "abstracts/mixins.scss";
+@import "components/images.scss";

@@ -1,0 +1,17 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.sectiondescription {
+  position: absolute;
+  text-align: center;
+  background-color: #005200;
+  color: white;
+}
+
+/*# sourceMappingURL=section.css.map */

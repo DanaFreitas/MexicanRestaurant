@@ -1,0 +1,41 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
+
+
+
+
+
+.imagecontainer {
+
+    
+    @include BackgroundImage;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+
+     // button  {
+       // z-index: 2;
+        //opacity: 20% !important;
+        //color:blue;
+    //  }
+      
+
+//}  
+
+
+}
+
+
+
+
+img {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    
+  //  padding: 1rem;
+  }
+  
+  
+
+#buildinginside {
+    aspect-ratio: 1 / 1.5;
+}
