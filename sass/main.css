@@ -25,14 +25,67 @@ body {
   background-color: #D3D3D3;
 }
 
-h1 {
-  font-family: "Rye", serif;
-  font-weight: 400;
-  font-style: normal;
+button {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  background-color: #a80000;
+  font-family: rye;
+  border: none;
+  position: absolute;
+  bottom: 0;
 }
 
-p {
-  padding: 1rem;
+button:nth-child(odd) {
+  background-color: #005200;
+  color: white;
+}
+
+button:hover {
+  color: white;
+}
+
+#openingbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: auto;
+  width: 60%;
+  border-radius: 50% 50% 50% 50%;
+}
+
+.section--imagecontainer {
+  background: 255, 255, 0, 0.3;
+  opacity: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+}
+
+#buildinginside {
+  aspect-ratio: 1/1.5;
+}
+
+.menu__food {
+  background: 255, 255, 0, 0.3;
+  opacity: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.catering__food {
+  background: 255, 255, 0, 0.3;
+  opacity: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 ul {
@@ -159,27 +212,31 @@ ul {
     font-size: 1.5rem;
   }
 }
-button {
-  width: 100%;
-  padding: 1rem 0 1rem 0;
-  background-color: #a80000;
-  font-family: rye;
-  border: none;
-  position: absolute;
-  bottom: 0;
-}
-
-button:hover {
-  color: white;
-}
-
-#openingbutton {
+footer {
+  background-color: #005200;
+  color: White;
+  font-size: 0.75rem;
+  text-align: left;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  bottom: auto;
-  width: 60%;
-  border-radius: 50% 50% 50% 50%;
+  padding-top: 0.5rem;
+}
+
+.footer--logo {
+  height: 2rem;
+  width: 2rem;
+  margin: 1em 2em 1em 2em;
+}
+
+#logowrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#questionmark {
+  letter-spacing: 2rem;
 }
 
 .header {
@@ -245,8 +302,10 @@ button:hover {
 .title {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
-  margin-top: 0;
+  font-size: 1.7rem;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  margin: auto;
 }
 
 @media screen and (min-width: 481px) {
@@ -276,59 +335,165 @@ button:hover {
     color: white;
   }
 }
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.sectiondescription {
+.section--sectiondescription {
   position: absolute;
   text-align: center;
   background-color: #005200;
   color: white;
 }
 
-footer {
-  background-color: #005200;
-  color: White;
-  font-size: 0.75rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  height: 1rem;
-  width: 1rem;
-  margin: 1em 2em 1em 2em;
-}
-
-#logowrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.imagecontainer {
-  background: 255, 255, 0, 0.3;
-  opacity: 50%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-img {
+.iframe {
   width: 100%;
   aspect-ratio: 1/1.2;
+  padding: 1rem 0 1rem 0;
 }
 
-#buildinginside {
-  aspect-ratio: 1/1.5;
+.directions__text {
+  text-align: center;
 }
 
-/*# sourceMappingURL=main.css.map */
+#Story {
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.homesection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: left;
+}
+
+.section--contactus {
+  height: 25rem;
+}
+
+#questionmark {
+  font-size: 32px;
+}
+
+.home__subtitle {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  font-size: 2.5rem;
+}
+
+.menu__food--title {
+  position: absolute;
+  top: 1rem;
+  font-family: "Rye", serif;
+  color: white;
+  z-index: 2;
+}
+
+.menu__food--shade {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  background: rgba(0, 0, 0, 0.99);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menusection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.menu__item--wrapper {
+  position: absolute;
+  text-align: left;
+  margin-top: 1rem;
+  padding: 3vw;
+  color: white;
+  margin-left: 10%;
+}
+
+.menu__item {
+  font-weight: 600;
+  line-height: 2rem;
+  word-break: break-word;
+  width: 80%;
+}
+
+.menu__item--description {
+  font-size: 0.75rem;
+  word-break: break-word;
+  width: 80%;
+}
+
+.section__food--title {
+  top: 0;
+  font-family: "Rye", serif;
+  background-color: #a80000;
+}
+
+.catering__food--title {
+  position: absolute;
+  top: 1rem;
+  font-family: "Rye", serif;
+  color: white;
+  z-index: 2;
+}
+
+.catering__food--shade {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  background: rgba(0, 0, 0, 0.99);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cateringsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.catering__item--wrapper {
+  position: absolute;
+  text-align: left;
+  margin-top: 1rem;
+  padding: 3vw;
+  color: white;
+  margin-left: 10%;
+}
+
+.catering__item {
+  font-weight: 600;
+  line-height: 2rem;
+  word-break: break-word;
+  width: 80%;
+}
+
+.catering__item--description {
+  font-size: 0.75rem;
+  word-break: break-word;
+  width: 80%;
+}
+
+.iframe {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  padding: 1rem 0 1rem 0;
+}
+
+.directions__text {
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

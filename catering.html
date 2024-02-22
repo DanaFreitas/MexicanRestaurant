@@ -4,35 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="sass/main.css" type="text/css">
 </head>
 <body>
-    <script src="MexicanRestaurant.js"></script>
-
-    <header>Heart of Mexico</header>
-
+  <header class="header" id="header">
     <nav>
-      <menu>
-        <div></div>
-        <div></div>
-        <div></div>
-      </menu>
+      <div id="headerwrapper=" class="header_default--wrapper">
+        <div
+          id="burgerholder"
+          class="header__burgerholder"
+          data-container="burgerholder"
+        >
+          <div
+            type="button"
+            id="hamburger"
+            class="header__hamburger"
+            data-button="hamburger"
+          >
+            <div
+              class="header__hamburger--hamburger-bit"
+              id="hamburger-bit-1"
+            ></div>
+            <div
+              class="header__hamburger--hamburger-bit"
+              id="hamburger-bit-2"
+            ></div>
+            <div
+              class="header__hamburger--hamburger-bit"
+              id="hamburger-bit-3"
+            ></div>
+          </div>
+        </div>
+        <!-- <h1
+          href="#home"
+          class="title"
+          id="title"
+          data-header="title"
+          type="button"
+          > The Heart of Mexico </h1> -->
+
+        <div
+          class="fa-solid fa-music"
+          id="musicbutton"
+          type="button"
+          data-button="musicbutton"
+        ></div>
+      </div>
+      <ul id="slidemenu" class="menu_slide" data-menu="default">
+        <a
+          href="#home"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="0"
+          >Home</a
+        >
+        <a
+          href="#menu"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="1"
+          >Menu</a
+        >
+        <a
+          href="#catering"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="2"
+          >Catering</a
+        >
+        <a
+          href="#location"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="3"
+          >Location</a
+        >
+
+        <a
+          href="#careers"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="4"
+          >Careers</a
+        >
+
+        <a
+          href="#contact"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="5"
+          >Contact Us</a
+        >
+      </ul>
+
+      <ul
+        id="responsivemenu"
+        class="header__responsivemenu--wrapper"
+        data-button="responscrollitem"
+      >
+        <a
+          href="#home"
+          class="header__responsivemenu--item scrollitem"
+          data-button="responscrollitem"
+          type="button"
+          value="6"
+          >Home</a
+        >
+        <a
+          href="#menu"
+          class="header__responsivemenu--item scrollitem"
+          data-button="responscrollitem"
+          type="button"
+          value="7"
+          >Menu</a
+        >
+        <a
+          href="#catering"
+          class="header__responsivemenu--item scrollitem"
+          data-button="responscrollitem"
+          type="button"
+          value="8"
+          >Catering</a
+        >
+        <a
+          href="#location"
+          class="header__responsivemenu--item scrollitem"
+          data-button="responscrollitem"
+          type="button"
+          value="9"
+          >Location</a
+        >
+
+        <a
+          href="#careers"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="10"
+          >Careers</a
+        >
+
+        <a
+          href="#contact"
+          class="header__defaultmenu--item scrollitem"
+          data-button="defaultscrollitem"
+          type="button"
+          value="11"
+          >Contact Us</a
+        >
+      </ul>
     </nav>
 
+    <h1
+      href="#home"
+      class="title"
+      id="title"
+      data-header="title"
+      type="button"
+    >
+      Heart of Mexico
+    </h1>
+
+    <nav id="nav__default"></nav>
+  </header>
+
+  <section class="section__food--title">
     <h1>Catering</h1>
+  </section>
 
+ 
 
+  <section class="cateringsection" id="CateringAppetizers">
+    <h2 class="catering__food--title">Appetizers</h2>
+    <div class="catering__food--shade"></div>
 
-    <section id="Desserts">
-        <h2></h2>
-        <img src="" alt="" />
-      </section>
-      <section id="ChildrensMenu">
-        <h2></h2>
-        <img src="" alt="" />
-      </section>
-  
+    <img
+      src="images/GuacamoleAdjusted.jpg"
+      alt="Guacamole"
+      class="catering__food"
+    />
+    <ul class="catering__item--wrapper">
+      <li class="catering__item">Tacos $31.99</li>
+      <li class="catering__item--description">16x flour torillas and corn tortillas served with chicken, beef, black beans, tomatoes, lettuce</li>
+      <li class="catering__item">Nachos $29.99</li>
+      <li class="catering__item--description">Nachos served with bean dip, guacamole, salsa, pico de gallo</li>
+    </ul>
+  </section>
+  <section class="cateringsection" id="Trays">
+    <h2 class="catering__food--title">Trays</h2>
+    <div class="catering__food--shade"></div>
 
+    <img
+      src="images/ChorizoAdjusted.jpg"
+      alt="Chorizos"
+      class="catering__food"
+    />
+    <ul class="catering__item--wrapper">
+      <li class="catering__item--description">
+        Everything comes with rice and beans
+      </li>
+      <li class="catering__item">Chicken Quesadillas $7.99</li>
+      <li class="catering__item">Hot Dogs $6.99</li>
+      <li class="catering__item">Bean and cheese Burrito $6.99</li>
+      <li class="catering__item">Tacos $5.99</li>
+      <li class="catering__item">French Fries $5.99</li>
+    </ul>
+  </section>
 
+  <footer>
+    Address: 1810 Costilla Street, Boston Ma <br />Hours: Monday-Sunday
+    9am-9pm <br />Phone Number: 161-810-271-821
+    <div id="logowrapper">
+      <img
+        src="images/Facebook.png"
+        alt="Facebook Logo"
+        class="footer--logo"
+      />
+      <img src="images/Twitter.png" alt="Twitter Logo" class="footer--logo" />
+      <img
+        src="images/Instagram.png"
+        alt="Instagram Logo"
+        class="footer--logo"
+      />
+    </div>
+  </footer>
+  <script src="MexicanRestaurant.js"></script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+#Story {
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.homesection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: left;
+}
+
+.section--contactus {
+  height: 25rem;
+}
+
+#questionmark {
+  font-size: 32px;
+}
+
+.home__subtitle {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  font-size: 2.5rem;
+}/*# sourceMappingURL=homesection.css.map */

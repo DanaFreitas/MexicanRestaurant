@@ -5,23 +5,10 @@
 
 
 
-.imagecontainer {
-
-    
+.section--imagecontainer {  
     @include BackgroundImage;
     background-size:     cover;                      
     background-repeat:   no-repeat;
-
-     // button  {
-       // z-index: 2;
-        //opacity: 20% !important;
-        //color:blue;
-    //  }
-      
-
-//}  
-
-
 }
 
 
@@ -29,13 +16,25 @@
 
 img {
     width: 100%;
-    aspect-ratio: 1 / 1.2;
-    
-  //  padding: 1rem;
-  }
+    aspect-ratio: 1 / 1.2;  }
   
   
 
 #buildinginside {
     aspect-ratio: 1 / 1.5;
 }
+
+
+.menu__food {
+  @include BackgroundImage;
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+opacity:.3;
+}
+
+.catering__food {
+    @include BackgroundImage;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+  opacity:.3;
+  }

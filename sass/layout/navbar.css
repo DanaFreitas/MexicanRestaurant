@@ -61,8 +61,10 @@
 .title {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
-  margin-top: 0;
+  font-size: 1.7rem;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  margin: auto;
 }
 
 @media screen and (min-width: 481px) {

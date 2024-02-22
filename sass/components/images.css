@@ -1,4 +1,4 @@
-.imagecontainer {
+.section--imagecontainer {
   background: 255, 255, 0, 0.3;
   opacity: 50%;
   width: 100%;
@@ -13,4 +13,22 @@ img {
 
 #buildinginside {
   aspect-ratio: 1/1.5;
+}
+
+.menu__food {
+  background: 255, 255, 0, 0.3;
+  opacity: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.catering__food {
+  background: 255, 255, 0, 0.3;
+  opacity: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }/*# sourceMappingURL=images.css.map */

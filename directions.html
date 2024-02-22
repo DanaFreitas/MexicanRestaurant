@@ -1,27 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="sass/main.css" type="text/css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="sass/main.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav>
+        <div id="headerwrapper=" class="header_default--wrapper">
+          <div
+            id="burgerholder"
+            class="header__burgerholder"
+            data-container="burgerholder"
+          >
+            <div
+              type="button"
+              id="hamburger"
+              class="header__hamburger"
+              data-button="hamburger"
+            >
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-1"
+              ></div>
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-2"
+              ></div>
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-3"
+              ></div>
+            </div>
+          </div>
+          <!-- <h1
+            href="#home"
+            class="title"
+            id="title"
+            data-header="title"
+            type="button"
+            > The Heart of Mexico </h1> -->
 
+          <div
+            class="fa-solid fa-music"
+            id="musicbutton"
+            type="button"
+            data-button="musicbutton"
+          ></div>
+        </div>
+        <ul id="slidemenu" class="menu_slide" data-menu="default">
+          <a
+            href="#home"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="0"
+            >Home</a
+          >
+          <a
+            href="#menu"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="1"
+            >Menu</a
+          >
+          <a
+            href="#catering"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="2"
+            >Catering</a
+          >
+          <a
+            href="#location"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="3"
+            >Location</a
+          >
 
-    <header>Heart of Mexico</header>
+          <a
+            href="#careers"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="4"
+            >Careers</a
+          >
 
-    <nav>
-      <menu>
-        <div></div>
-        <div></div>
-        <div></div>
-      </menu>
-    </nav>
+          <a
+            href="#contact"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="5"
+            >Contact Us</a
+          >
+        </ul>
+
+        <ul
+          id="responsivemenu"
+          class="header__responsivemenu--wrapper"
+          data-button="responscrollitem"
+        >
+          <a
+            href="#home"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="6"
+            >Home</a
+          >
+          <a
+            href="#menu"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="7"
+            >Menu</a
+          >
+          <a
+            href="#catering"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="8"
+            >Catering</a
+          >
+          <a
+            href="#location"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="9"
+            >Location</a
+          >
+
+          <a
+            href="#careers"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="10"
+            >Careers</a
+          >
+
+          <a
+            href="#contact"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="11"
+            >Contact Us</a
+          >
+        </ul>
+      </nav>
+
+      <h1
+        href="#home"
+        class="title"
+        id="title"
+        data-header="title"
+        type="button"
+      >
+        Heart of Mexico
+      </h1>
+
+      <nav id="nav__default"></nav>
+    </header>
+
 
     <h1>Directions</h1>
 
-    <script src="MexicanRestaurant.js"></script>
+    <p class="directions__text">
+      Located in the heart of Boston, we can be accessed by train, bus, foot or
+      car.
+    </p>
 
-</body>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7574.0173433125765!2d-71.06340232388875!3d42.3600620702738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37085a3300f2f%3A0x7e2c37cdd191455a!2sAyuntamiento%20de%20Boston!5e0!3m2!1ses-419!2sus!4v1708528532582!5m2!1ses-419!2sus"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="iframe"
+      ></iframe>
+
+    <footer>
+      Address: 1810 Costilla Street, Boston Ma <br />Hours: Monday-Sunday
+      9am-9pm <br />Phone Number: 161-810-271-821
+      <div id="logowrapper">
+        <img
+          src="images/Facebook.png"
+          alt="Facebook Logo"
+          class="footer--logo"
+        />
+        <img src="images/Twitter.png" alt="Twitter Logo" class="footer--logo" />
+        <img
+          src="images/Instagram.png"
+          alt="Instagram Logo"
+          class="footer--logo"
+        />
+      </div>
+    </footer>
+    <script src="MexicanRestaurant.js"></script>
+  </body>
 </html>

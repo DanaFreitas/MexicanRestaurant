@@ -4,57 +4,401 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="sass/main.css" type="text/css" />
   </head>
   <body>
+    <header class="header" id="header">
+      <nav>
+        <div id="headerwrapper=" class="header_default--wrapper">
+          <div
+            id="burgerholder"
+            class="header__burgerholder"
+            data-container="burgerholder"
+          >
+            <div
+              type="button"
+              id="hamburger"
+              class="header__hamburger"
+              data-button="hamburger"
+            >
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-1"
+              ></div>
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-2"
+              ></div>
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-3"
+              ></div>
+            </div>
+          </div>
+          <!-- <h1
+            href="#home"
+            class="title"
+            id="title"
+            data-header="title"
+            type="button"
+            > The Heart of Mexico </h1> -->
+
+          <div
+            class="fa-solid fa-music"
+            id="musicbutton"
+            type="button"
+            data-button="musicbutton"
+          ></div>
+        </div>
+        <ul id="slidemenu" class="menu_slide" data-menu="default">
+          <a
+            href="#home"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="0"
+            >Home</a
+          >
+          <a
+            href="#menu"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="1"
+            >Menu</a
+          >
+          <a
+            href="#catering"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="2"
+            >Catering</a
+          >
+          <a
+            href="#location"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="3"
+            >Location</a
+          >
+
+          <a
+            href="#careers"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="4"
+            >Careers</a
+          >
+
+          <a
+            href="#contact"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="5"
+            >Contact Us</a
+          >
+        </ul>
+
+        <ul
+          id="responsivemenu"
+          class="header__responsivemenu--wrapper"
+          data-button="responscrollitem"
+        >
+          <a
+            href="#home"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="6"
+            >Home</a
+          >
+          <a
+            href="#menu"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="7"
+            >Menu</a
+          >
+          <a
+            href="#catering"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="8"
+            >Catering</a
+          >
+          <a
+            href="#location"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="9"
+            >Location</a
+          >
+
+          <a
+            href="#careers"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="10"
+            >Careers</a
+          >
+
+          <a
+            href="#contact"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="11"
+            >Contact Us</a
+          >
+        </ul>
+      </nav>
+
+      <h1
+        href="#home"
+        class="title"
+        id="title"
+        data-header="title"
+        type="button"
+      >
+        Heart of Mexico
+      </h1>
+
+      <nav id="nav__default"></nav>
+    </header>
+
+    <section class="section__food--title">
+      <h1>Menu</h1>
+    </section>
+
+    <section class="menusection" id="Appetizers">
+      <h2 class="menu__food--title">Appetizers</h2>
+      <div class="menu__food--shade"></div>
+
+      <img
+        src="images/nachosAdjusted.jpg"
+        alt="Picture of Nachos and guacamole"
+        class="menu__food"
+      />
+
+      <ul class="menu__item--wrapper">
+        <li class="menu__item">Nachos and Guacamole $9.99</li>
+        <li class="menu__item">Nachos and Cheese $9.99</li>
+        <li class="menu__item">Tamales $9.99</li>
+        <li class="menu__item--description">3x per order</li>
+        <li class="menu__item">Elotes $5.99</li>
+        <li class="menu__item--description">
+          Grilled corn with mayo, cheese, lime, and taco sauce
+        </li>
+      </ul>
+    </section>
+
+    <section class="menusection" id="Salads">
+      <h2 class="menu__food--title">Salads</h2>
+      <div class="menu__food--shade"></div>
+
+      <img
+        src="images/CornSaladAdjusted.jpg"
+        alt="Corn salad"
+        class="menu__food"
+      />
+      <ul class="menu__item--wrapper">
+        <li class="menu__item">Taco Salad $14.99</li>
+        <li class="menu__item--description">
+          Ground beef, black beans, romaine lettuce, tomatoes, cheddar cheese,
+          avacado, salsa, sour cream
+        </li>
+        <li class="menu__item">Fajita Salad</li>
+        <li class="menu__item--description">
+          Chicken, bell peppers, onion, romaine lettice, avacado, lime juice
+        </li>
+        <li class="menu__item">Corn salad</li>
+        <li class="menu__item--description">
+          Corn, tomatoes, cucumber, red onion, feta cheese, honey, olive oil,
+          vinegar
+        </li>
+        <li class="menu__item">Avacado salad</li>
+        <li class="menu__item--description">
+          Cucumber, tomatoes, red onion, avacados, lemon juice, red wine
+          vinegar, olive oil, garlic
+        </li>
+      </ul>
+    </section>
+    <section class="menusection" id="Fajitas">
+      <h2 class="menu__food--title">Fajitas</h2>
+      <div class="menu__food--shade"></div>
+
+      <img src="images/FajitaAdjusted.jpg" alt="Fajitas" class="menu__food" />
+      <ul class="menu__item--wrapper">
+        <li class="menu__item--description">
+          Bell pepper, onion, mushrooms, and the selected meat or pinto beans
+          sauteed together
+        </li>
+        <li class="menu__item">Shrimp $16.99</li>
+        <li class="menu__item">Chicken $16.99</li>
+        <li class="menu__item">Beef $16.99</li>
+        <li class="menu__item">Pork $16.99</li>
+        <li class="menu__item">Vegetarian $14.99</li>
+      </ul>
+    </section>
+    <section class="menusection" id="Tacos">
+      <h2 class="menu__food--title">Tacos</h2>
+      <div class="menu__food--shade"></div>
+
+      <img src="images/TacoAdjusted.jpg" alt="Tacos" class="menu__food" />
+      <ul class="menu__item--wrapper">
+        <li class="menu__item">Comes in Sets of 3</li>
+        <li class="menu__item">Carne Adasa $14.99</li>
+        <li class="menu__item--description">Skirt stake</li>
+        <li class="menu__item">Tacos al Pastor $15.99</li>
+        <li class="menu__item--description">
+          Marinated pork, onion, pineapple, cilantro
+        </li>
+        <li class="menu__item">Carnitas $17.99></li>
+        <li class="menu__item--description">
+          Pork shoulder, onion, jalapeno garlic, orange juice
+        </li>
+        <li class="menu__item">Tacos de Papa $15.99</li>
+        <li class="menu__item--description">potatoes, lettuce, tomatoes</li>
+        <li class="menu__item">Nopales</li>
+        <li class="menu__item--description">
+          Nopales(cactus), tomatoes, cheese, ground beef, lard, chiles, onion
+        </li>
+      </ul>
+    </section>
+    <section class="menusection" id="Soups">
+      <h2 class="menu__food--title">Soups</h2>
+      <div class="menu__food--shade"></div>
+
+      <img
+        src="images/TacoSoupAdjusted.jpg"
+        alt="Taco soup"
+        class="menu__food"
+      />
+      <ul class="menu__item--wrapper">
+        <li class="menu__item">Aztec Soup $15.99</li>
+        <li class="menu__item--description">
+          Dried chiles, onion, tomatoes, tortilla chips
+        </li>
+        <li class="menu__item">Taco soup $15.99</li>
+        <li class="menu__item--description">
+          Ground beef, onion, corn, beans, jalapeno, tomato sauce
+        </li>
+        <li class="menu__item">Chicken Tortilla Soup $17.99</li>
+        <li class="menu__item--description">
+          Onion, jalapeno, chicken breast, beans, tomatoes, tortilla strips
+        </li>
+        <li class="menu__item">Mexican Chicken Soup</li>
+        <li class="menu__item--description">
+          Onion, carrot, celery, cilantro, diced chicken, cheddar
+        </li>
+        <li class="menu__item">Street Corn Soup</li>
+        <li class="menu__item--description">
+          Corn kernels, onion, sour cream, cotija cheese
+        </li>
+      </ul>
+    </section>
+    <section class="menusection" id="Meats">
+      <h2 class="menu__food--title">Meats</h2>
+      <div class="menu__food--shade"></div>
+      <img
+        src="images/CarneAsadaAdjusted.jpg"
+        alt="Carne Asadas"
+        class="menu__food"
+      />
+      <ul class="menu__item--wrapper">
+        <li class="menu__item">Pollo con Mole $20.99</li>
+        <li class="menu__item--description">
+          Chicken, seseme seeds, mole sauce
+        </li>
+        <li class="menu__item">Deviled Shrimp $20.99</li>
+        <li class="menu__item--description">
+          Shrimp, tomatoes, garlic, peppers
+        </li>
+        <li class="menu__item">Chorizo $19.99</li>
+        <li class="menu__item--description">
+          Ground pork, chile powder, cinnamon, paprika, cumin, crushed garlic,
+          oregano
+        </li>
+        <li class="menu__item">Chicken Quesadillas $19.99</li>
+        <li class="menu__item--description">
+          Shredded chicken, chile powder, onion, bell peppers, pepper jack,
+          cheddar cheese
+        </li>
+      </ul>
+    </section>
+
+    <section class="menusection" id="Desserts">
+      <h2 class="menu__food--title">Desserts</h2>
+      <div class="menu__food--shade"></div>
+
+      <img
+        src="images/TresLechesCakeAdjusted.jpg"
+        alt="Tres Leches Cake"
+        class="menu__food"
+      />
+      <ul class="menu__item--wrapper">
+        <li class="menu__item">Churros $10.99</li>
+        <li class="menu__item">Flan $8.99</li>
+        <li class="menu__item">Tres Leches Cake $9.99</li>
+        <li class="menu__item">Sopapillas $9.99</li>
+        <li class="menu__item--description">
+          Fried douch with sugar and honey sprinkled on top
+        </li>
+      </ul>
+    </section>
+    <section class="menusection" id="ChildrensMenu">
+      <h2 class="menu__food--title">Children's Menu</h2>
+      <div class="menu__food--shade"></div>
+
+      <img
+        src="images/Tortilla chips.jpg"
+        alt="Tortilla chips"
+        class="menu__food"
+      />
+      <ul class="menu__item--wrapper">
+        <li class="menu__item--description">
+          Everything comes with rice and beans
+        </li>
+        <li class="menu__item">Chicken Quesadillas $7.99</li>
+        <li class="menu__item">Hot Dogs $6.99</li>
+        <li class="menu__item">Bean and cheese Burrito $6.99</li>
+        <li class="menu__item">Tacos $5.99</li>
+        <li class="menu__item">French Fries $5.99</li>
+      </ul>
+    </section>
+
+    <footer>
+      Address: 1810 Costilla Street, Boston Ma <br />Hours: Monday-Sunday
+      9am-9pm <br />Phone Number: 161-810-271-821
+      <div id="logowrapper">
+        <img
+          src="images/Facebook.png"
+          alt="Facebook Logo"
+          class="footer--logo"
+        />
+        <img src="images/Twitter.png" alt="Twitter Logo" class="footer--logo" />
+        <img
+          src="images/Instagram.png"
+          alt="Instagram Logo"
+          class="footer--logo"
+        />
+      </div>
+    </footer>
     <script src="MexicanRestaurant.js"></script>
-
-    <header>Heart of MOnkey</header>
-
-    <nav>
-      <menu>
-        <div></div>
-        <div></div>
-        <div></div>
-      </menu>
-    </nav>
-
-    <h1>Menu</h1>
-
-    <section id="Appetizers">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-    <section id="Salads">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-    <section id="Fajitas">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-    <section id="Tacos">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-    <section id="Soups">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-    <section id="Meats">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-    <section id="Desserts">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-    <section id="ChildrensMenu">
-      <h2></h2>
-      <img src="" alt="" />
-    </section>
-
-<footer></footer>
-
   </body>
 </html>

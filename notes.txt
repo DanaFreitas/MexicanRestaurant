@@ -95,3 +95,60 @@ Need to add the footer. also add boxes for the secitons of text
 2/16
 
 align vertical justify horizontal. longer so hori
+
+used letter spacing for the ?s
+
+perfect bem.
+
+should I move up the buttons and seperate the sections better?
+
+2/17
+
+still need to figure out that centering
+        maybe a grandparent
+
+need to reorganize the css.
+        have more stuff be in the "homesection" css
+                contactus and whoweare
+
+2/18
+
+display:
+inline horizontal limited
+inlin-block horizontal but can stretch
+block vertical
+
+2/19
+
+menu.scss AND typography scss were both involgin  the same text! eed to clean that up and organize better,
+
+section tag was a problem
+
+fill textts
+
+2/20
+
+ctrl-shift-e
+get to the side stuff
+
+did shading for images
+
+for the texts, make sure to properly set the displays for the wrappers
+
+did it. itle needed a z-index of 2 to work. idk why
+
+ctrl d highlight copies of the code
+
+used word break and width to make shorter
+
+why is the first section of menu centered but not the others?
+
+make the directions look better
+
+
+2/21
+
+the css for careers isnt working
+nvm, misspelling
+
+name in forms is used for browser requests

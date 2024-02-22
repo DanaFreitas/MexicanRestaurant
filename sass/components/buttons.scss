@@ -9,6 +9,13 @@ button {width:100%;
     bottom: 0;
 }
 
+button:nth-child(odd) {
+    background-color: #005200;
+    color:white;
+}
+
+
+
 button:hover {color:white;}
 
 #openingbutton {
