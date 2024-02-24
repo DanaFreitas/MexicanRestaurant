@@ -1,0 +1,14 @@
+p {
+  margin: 1rem;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.career__label {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=careers.css.map */

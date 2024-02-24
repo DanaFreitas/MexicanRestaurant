@@ -152,3 +152,99 @@ the css for careers isnt working
 nvm, misspelling
 
 name in forms is used for browser requests
+
+work on form
+        should I use a placeholder?
+
+include form to accept resume
+include menu to accept jobs
+include way to show what phone number to put include
+        what to do about hyphens
+remember FORM OVER FUNCTION
+
+name of section on hop of input FOR NOW in mobile
+        change for pc
+
+look up clickable dropdown menu
+
+
+there was an old liveform
+        didnt update the form   
+                did the trio
+        now works
+
+homepage
+
+removed h1
+        refreshed browser.
+                nothing
+        deleted and made new tab. worked.
+
+went to careers
+        old error still there 
+                works now
+        added new line
+                doesnt work
+accidentally tried again while on css
+        went back to old page ctrl c
+                didnt work
+        right page now  ctrl c
+                didnt work
+undoing all bits
+        command,watch,live
+                didnt work
+        watch,command,live
+                didnt work
+
+maybe the problem is that im using both the command line AND the extension
+
+didnt work with just extension. maybe i need to wipe all of the liveservers first
+        no. will try canceling the port too
+
+...thats because the other one was being selected by default.
+
+still...it might be worth to inquire if running both lives at once could be a problem
+
+2/22
+
+ <option value="none" selected disabled hidden>Select an Option</option>   
+
+for forms, each part needs the same name
+
+need better formatting
+        the labels and inputs are much farther apart than the radio buttons and their labels      
+                but i cant put those too far apart
+        try having the section descriptions have the inputs
+                can align everything to the left
+
+come up with a backup font for rye        
+
+rework the form buttons
+
+2/23
+
+fangsong
+
+for font family "serif" or "san-serif" or generic stuff is a generic default
+
+
+pages with buttons
+        main
+        NOT menu       
+        NOT catering
+        NOT directions
+        careers
+        contact
+BUT.......the menu is on ALL pages
+
+divide areas with sections or divs?
+
+
+
+need to fix the buttons on the bottom...sooo close to finishing this part
+
+replaced divs with sections
+
+need to reorganize the forms
+have the texts above the fields
+        side by side doesnt work well on mobile

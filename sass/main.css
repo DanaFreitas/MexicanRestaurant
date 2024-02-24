@@ -25,7 +25,11 @@ body {
   background-color: #D3D3D3;
 }
 
-button {
+h1 header {
+  font-family: rye, serif;
+}
+
+.homesection__homepagebutton {
   width: 100%;
   padding: 1rem 0 1rem 0;
   background-color: #a80000;
@@ -35,12 +39,12 @@ button {
   bottom: 0;
 }
 
-button:nth-child(odd) {
+.homesection__homepagebutton:nth-child(odd) {
   background-color: #005200;
   color: white;
 }
 
-button:hover {
+.homesection__homepagebutton:hover {
   color: white;
 }
 
@@ -212,6 +216,54 @@ ul {
     font-size: 1.5rem;
   }
 }
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+form > input {
+  align-items: center;
+}
+
+.formsection--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 0 1em 0;
+}
+
+.formsection--formbuttoncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form--button {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  background-color: #a80000;
+  font-family: rye;
+  border: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#submit {
+  background-color: #005200;
+}
+
+.form--button:hover {
+  color: yellow;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-family: rye, serif;
+}
+
 footer {
   background-color: #005200;
   color: White;
@@ -496,4 +548,19 @@ footer {
 
 .directions__text {
   text-align: center;
-}/*# sourceMappingURL=main.css.map */
+}
+
+p {
+  margin: 1rem;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.career__label {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

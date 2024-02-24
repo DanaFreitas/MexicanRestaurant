@@ -1,22 +1,35 @@
 
 
-button {width:100%;
+// button {width:100%;
+//     padding: 1rem 0 1rem 0;
+//     background-color:#a80000;
+//     font-family: rye;
+//     border:none;
+//     position:absolute;
+//     bottom: 0;
+// }
+
+.homesection__homepagebutton{width:100%;
     padding: 1rem 0 1rem 0;
     background-color:#a80000;
     font-family: rye;
     border:none;
     position:absolute;
-    bottom: 0;
-}
+    bottom: 0;}
 
-button:nth-child(odd) {
+
+.careers__careerbutton{}
+.contactus__contactbutton{}
+
+
+.homesection__homepagebutton:nth-child(odd) {
     background-color: #005200;
     color:white;
 }
 
 
 
-button:hover {color:white;}
+.homesection__homepagebutton:hover {color:white;}
 
 #openingbutton {
 //display: grid; place-items:center;

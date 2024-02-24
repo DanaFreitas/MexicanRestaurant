@@ -96,8 +96,8 @@
               data-button="defaultscrollitem"
               type="button"
               value="4"
-              >Careers</a
-    h1    d    >h1  
+              >Careers</a>
+
             <a
               href="#contact"
               class="header__defaultmenu--item scrollitem"
@@ -152,8 +152,7 @@
               data-button="defaultscrollitem"
               type="button"
               value="10"
-              >Careers</a
-    h1    d    >h1  
+              >Careers</a>
             <a
               href="#contact"
               class="header__defaultmenu--item scrollitem"
@@ -180,23 +179,55 @@
   
       
     
-    <h1>Careers</h1>
     
     <p>Interested in a career? We have a variety of jobs here that will provide growth, experience, and a warm, family atmosphere.</p>
     
     <form action="">
-<label for="name">Name (optional):</label>
-<input type="text" id="name" name="name">
-<label for="job">Job Interest:</label>
-<input type="text" id="job" name="job">
+<section class="formsection--wrapper">
+<label for="name" autofocus>Full Name</label>
+<input type="text" id="name" name="name" placeholder="Type name">
+    </section>
+
+<fieldset class="fieldset">
+<legend class="legend">Job Interest:</legend>
+
+<section>
+  <section><input type="radio" id="Cook" name="JobSelection" value="Cook" >
+    <label for="Cook" class="career__label">Cook</label></section>
+  
+  <section>  <input type="radio" id="Waiter" name="JobSelection" value="Waiter" >
+    <label for="Waiter" class="career__label">Waiter</label></section>
+
+  <section>  <input type="radio" id="Dishwasher" name="JobSelection" value="Dishwasher" >
+    <label for="Dishwasher" class="career__label">Dishwasher</label></section>
+
+  <section><input type="radio" id="ShiftManager" name="JobSelection" value="ShiftManager" >
+    <label for="ShiftManager" class="career__label">Shift Manager</label></section>
+  
+  </section>
+
+</fieldset>
+
+<section class="formsection--wrapper">
 <label for="resume">Resume</label>
-<input type="text" id="resume" name="resume">
+<input type="text" id="resume" name="resume" placeholder="Upload your resume">
+</section>
+
+<section class="formsection--wrapper">
 <label for="email">Email</label>
-<input type="email" id="email" name="email">
+<input type="email" id="email" name="email" placeholder="Enter your email"\>
+</section>
+
+<section class="formsection--wrapper"> 
 <label for="phone">Phone Number</label>
-<input type="tel" id="phone" name="phone">
-<button type="reset">Reset</button>
-<button type="submit">Submit</button>
+<input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" minlength="10" maxlength="10">
+ </section> 
+
+<section class="formsection--formbuttoncontainer">
+<button type="reset" class="form--button" id="reset">Reset</button>
+<button type="submit" class="form--button" id="submit">Submit</button>
+</section>
+
 </form>
     
 

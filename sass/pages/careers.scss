@@ -1,0 +1,9 @@
+p {margin: 1rem;}
+
+
+.fieldset {
+    display:flex; flex-direction: column; 
+    //display:grid;grid-template-columns: 10% 20% 70%; justify-items:stretch;
+}
+
+.career__label{padding: 1rem;}

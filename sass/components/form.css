@@ -1,3 +1,49 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
 
+form > input {
+  align-items: center;
+}
+
+.formsection--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 0 1em 0;
+}
+
+.formsection--formbuttoncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form--button {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  background-color: #a80000;
+  font-family: rye;
+  border: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#submit {
+  background-color: #005200;
+}
+
+.form--button:hover {
+  color: yellow;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-family: rye, serif;
+}
 
 /*# sourceMappingURL=form.css.map */
