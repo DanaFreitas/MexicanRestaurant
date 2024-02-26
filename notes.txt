@@ -248,3 +248,26 @@ replaced divs with sections
 need to reorganize the forms
 have the texts above the fields
         side by side doesnt work well on mobile
+
+Had changed text colors from black to white because of dark backgrounds. need to find a good hover color. 
+        remember: for testing, hover isnt a thing on mobile
+
+to have the text in the right postion on the homepage, I need to use absolute display on the p tag.
+        however...I need to find the right background for them, and/or darken the background images and make the text white.
+                maybe have two different tests and compare side by side?
+
+2/24 git reset is a thing
+
+moved the labels up for the forms.
+
+best practice find way to declare and set href locations using arrays
+
+2/25
+
+window.location vs location.href
+
+
+need let thehref=pagename[i].getAttribute("href");
+is it best practice to have the list of links in arrays together
+
+does using notes.txt mess with the livesass

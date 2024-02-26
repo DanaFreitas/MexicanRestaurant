@@ -3,6 +3,47 @@ const ham = document.getElementById("hamburger");
 
 const title = document.getElementById("title");
 
+title.addEventListener("click", (event) => {
+window.location.href="careers.html";
+})
+
+const pagename = document.getElementsByClassName("header__defaultmenu--item");
+
+
+
+//location.href="index.html"  
+let test = []
+
+console.log(test)
+for (let i = 0; i < pagename.length; i++){
+let thehref=pagename[i].getAttribute("href");
+test.push(thehref)
+}
+console.log(test)
+
+
+
+
+//have var ref the href
+
+
+for (let i = 0; i < pagename.length; i++){
+
+
+pagename[i].addEventListener("click",() => {
+let thehref=pagename[i].getAttribute("href");
+let hrefslice = thehref.slice(1);
+window.location.href=`${hrefslice}.html`;
+
+
+ })
+}
+
+
+
+
+
+
 // title.addEventListener("click", (event) => {
 //   const Mozartheader = document.getElementById("Mozart");
 //   event.preventDefault();
@@ -102,11 +143,11 @@ for (let l = 0; l < defaultMenuButton.length; l++) {
 
 
 
-    section[l].scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
+//    section[l].scrollIntoView({
+   //   behavior: "smooth",
+  //    block: "start",
+    //  inline: "nearest",
+    //});
 
 
     const respon = document.getElementsByClassName(

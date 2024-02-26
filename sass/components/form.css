@@ -10,8 +10,7 @@ form > input {
 
 .formsection--wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 1em 0 1em 0;
 }
 

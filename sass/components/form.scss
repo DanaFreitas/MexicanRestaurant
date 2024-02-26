@@ -4,8 +4,9 @@ form > input {align-items: center;}
 
 .formsection--wrapper {
     display:flex; 
-    flex-direction:row; 
-    justify-content: space-between;
+   // flex-direction:row;
+   flex-direction:column; 
+    //justify-content: space-between;
     margin: 1em 0 1em 0;
 }
 

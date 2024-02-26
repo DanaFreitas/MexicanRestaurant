@@ -20,7 +20,7 @@ ul {
   display: block;
   z-index: 40;
   position: fixed;
-  background-color: grey;
+  background-color: #d3d3d3;
   color: black;
   height: 100%;
   width: 100%;
@@ -39,7 +39,7 @@ ul {
   display: block;
   z-index: 40;
   position: fixed;
-  background-color: grey;
+  background-color: #d3d3d3;
   color: black;
   height: 100%;
   width: 100%;
@@ -72,7 +72,7 @@ ul {
 }
 .header__defaultmenu--item {
   left: 0;
-  font-size: 1.5em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -121,4 +121,6 @@ ul {
   .scrollitem {
     font-size: 1.5rem;
   }
-}/*# sourceMappingURL=menusliding.css.map */
+}
+
+/*# sourceMappingURL=menusliding.css.map */

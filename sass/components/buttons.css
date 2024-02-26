@@ -6,6 +6,7 @@
   border: none;
   position: absolute;
   bottom: 0;
+  color: white;
 }
 
 .homesection__homepagebutton:nth-child(odd) {
@@ -14,10 +15,11 @@
 }
 
 .homesection__homepagebutton:hover {
-  color: white;
+  color: yellow;
 }
 
 #openingbutton {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;

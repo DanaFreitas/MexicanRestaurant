@@ -15,11 +15,10 @@
     font-family: rye;
     border:none;
     position:absolute;
-    bottom: 0;}
+    bottom: 0;
+color:white;}
 
 
-.careers__careerbutton{}
-.contactus__contactbutton{}
 
 
 .homesection__homepagebutton:nth-child(odd) {
@@ -29,10 +28,11 @@
 
 
 
-.homesection__homepagebutton:hover {color:white;}
+.homesection__homepagebutton:hover {color:yellow;}
 
 #openingbutton {
 //display: grid; place-items:center;
+color:white;
 display: flex; 
 justify-content: center;
 align-items: center ;

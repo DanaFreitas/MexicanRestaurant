@@ -37,6 +37,7 @@ h1 header {
   border: none;
   position: absolute;
   bottom: 0;
+  color: white;
 }
 
 .homesection__homepagebutton:nth-child(odd) {
@@ -45,10 +46,11 @@ h1 header {
 }
 
 .homesection__homepagebutton:hover {
-  color: white;
+  color: yellow;
 }
 
 #openingbutton {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +116,7 @@ ul {
   display: block;
   z-index: 40;
   position: fixed;
-  background-color: grey;
+  background-color: #d3d3d3;
   color: black;
   height: 100%;
   width: 100%;
@@ -133,7 +135,7 @@ ul {
   display: block;
   z-index: 40;
   position: fixed;
-  background-color: grey;
+  background-color: #d3d3d3;
   color: black;
   height: 100%;
   width: 100%;
@@ -166,7 +168,7 @@ ul {
 }
 .header__defaultmenu--item {
   left: 0;
-  font-size: 1.5em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -228,8 +230,7 @@ form > input {
 
 .formsection--wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 1em 0 1em 0;
 }
 
@@ -262,6 +263,12 @@ form > input {
 legend {
   font-size: 1.5rem;
   font-family: rye, serif;
+}
+
+.pagetitle {
+  top: 0;
+  font-family: "Rye", serif;
+  background-color: #a80000;
 }
 
 footer {
@@ -313,6 +320,7 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   grid-area: p1;
+  margin-left: 1rem;
 }
 
 .header__hamburger {
@@ -483,12 +491,6 @@ footer {
   font-size: 0.75rem;
   word-break: break-word;
   width: 80%;
-}
-
-.section__food--title {
-  top: 0;
-  font-family: "Rye", serif;
-  background-color: #a80000;
 }
 
 .catering__food--title {
