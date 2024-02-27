@@ -3,6 +3,8 @@
   background-color: #005200;
   width: 100%;
   display: flex;
+  position: fixed;
+  top: 0;
 }
 
 @media screen and (min-width: 481px) {

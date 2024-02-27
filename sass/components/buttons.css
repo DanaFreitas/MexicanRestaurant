@@ -9,11 +9,6 @@
   color: white;
 }
 
-.homesection__homepagebutton:nth-child(odd) {
-  background-color: #005200;
-  color: white;
-}
-
 .homesection__homepagebutton:hover {
   color: yellow;
 }
@@ -26,6 +21,10 @@
   bottom: auto;
   width: 60%;
   border-radius: 50% 50% 50% 50%;
+}
+
+#openingbutton:hover {
+  color: yellow;
 }
 
 /*# sourceMappingURL=buttons.css.map */

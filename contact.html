@@ -1,227 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="sass/main.css" type="text/css">
-</head>
-<body>
-    
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" type="text/css" />
+  </head>
+  <body>
     <header class="header" id="header">
-        <nav>
-          <div id="headerwrapper=" class="header_default--wrapper">
+      <nav>
+        <div id="headerwrapper=" class="header_default--wrapper">
+          <div
+            id="burgerholder"
+            class="header__burgerholder"
+            data-container="burgerholder"
+          >
             <div
-              id="burgerholder"
-              class="header__burgerholder"
-              data-container="burgerholder"
+              type="button"
+              id="hamburger"
+              class="header__hamburger"
+              data-button="hamburger"
             >
               <div
-                type="button"
-                id="hamburger"
-                class="header__hamburger"
-                data-button="hamburger"
-              >
-                <div
-                  class="header__hamburger--hamburger-bit"
-                  id="hamburger-bit-1"
-                ></div>
-                <div
-                  class="header__hamburger--hamburger-bit"
-                  id="hamburger-bit-2"
-                ></div>
-                <div
-                  class="header__hamburger--hamburger-bit"
-                  id="hamburger-bit-3"
-                ></div>
-              </div>
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-1"
+              ></div>
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-2"
+              ></div>
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-3"
+              ></div>
             </div>
-            <!-- <h1
-              href="#home"
-              class="title"
-              id="title"
-              data-header="title"
-              type="button"
-              > The Heart of Mexico </h1> -->
-  
-            <div
-              class="fa-solid fa-music"
-              id="musicbutton"
-              type="button"
-              data-button="musicbutton"
-            ></div>
           </div>
-          <ul id="slidemenu" class="menu_slide" data-menu="default">
-            <a
-              href="#home"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="0"
-              >Home</a
-            >
-            <a
-              href="#menu"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="1"
-              >Menu</a
-            >
-            <a
-              href="#catering"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="2"
-              >Catering</a
-            >
-            <a
-              href="#location"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="3"
-              >Location</a
-            >
-  
-            <a
-              href="#careers"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="4"
-              >Careers</a>
 
-            <a
-              href="#contact"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="5"
-              >Contact Us</a
-            >
-          </ul>
-  
-          <ul
-            id="responsivemenu"
-            class="header__responsivemenu--wrapper"
-            data-button="responscrollitem"
+          <div
+            class="fa-solid fa-music"
+            id="musicbutton"
+            type="button"
+            data-button="musicbutton"
+          ></div>
+        </div>
+        <ul id="slidemenu" class="menu_slide" data-menu="default">
+          <a
+            href="#index"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="0"
+            >Home</a
           >
-            <a
-              href="#home"
-              class="header__responsivemenu--item scrollitem"
-              data-button="responscrollitem"
-              type="button"
-              value="6"
-              >Home</a
-            >
-            <a
-              href="#menu"
-              class="header__responsivemenu--item scrollitem"
-              data-button="responscrollitem"
-              type="button"
-              value="7"
-              >Menu</a
-            >
-            <a
-              href="#catering"
-              class="header__responsivemenu--item scrollitem"
-              data-button="responscrollitem"
-              type="button"
-              value="8"
-              >Catering</a
-            >
-            <a
-              href="#location"
-              class="header__responsivemenu--item scrollitem"
-              data-button="responscrollitem"
-              type="button"
-              value="9"
-              >Location</a
-            >
-  
-            <a
-              href="#careers"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="10"
-              >Careers</a>
-            <a
-              href="#contact"
-              class="header__defaultmenu--item scrollitem"
-              data-button="defaultscrollitem"
-              type="button"
-              value="11"
-              >Contact Us</a
-            >
-          </ul>
-        </nav>
-  
-        <h1
-          href="#home"
-          class="title"
-          id="title"
-          data-header="title"
-          type="button"
-        >
-          Heart of Mexico
-        </h1>
-  
-        <nav id="nav__default"></nav>
-      </header>
-  
+          <a
+            href="#menu"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="1"
+            >Menu</a
+          >
+          <a
+            href="#catering"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="2"
+            >Catering</a
+          >
+          <a
+            href="#location"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="3"
+            >Location</a
+          >
 
-      <h1 class="pagetitle">
-        Contact
+          <a
+            href="#careers"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="4"
+            >Careers</a
+          >
+
+          <a
+            href="#contact"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultscrollitem"
+            type="button"
+            value="5"
+            >Contact Us</a
+          >
+        </ul>
+
+        <ul
+          id="responsivemenu"
+          class="header__responsivemenu--wrapper"
+          data-button="responscrollitem"
+        >
+          <a
+            href="#index"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="6"
+            >Home</a
+          >
+          <a
+            href="#menu"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="7"
+            >Menu</a
+          >
+          <a
+            href="#catering"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="8"
+            >Catering</a
+          >
+          <a
+            href="#location"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="9"
+            >Location</a
+          >
+
+          <a
+            href="#careers"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="10"
+            >Careers</a
+          >
+          <a
+            href="#contact"
+            class="header__responsivemenu--item scrollitem"
+            data-button="responscrollitem"
+            type="button"
+            value="11"
+            >Contact Us</a
+          >
+        </ul>
+      </nav>
+
+      <h1
+        href="#index"
+        class="title"
+        id="title"
+        data-header="title"
+        type="button"
+      >
+        Heart of Mexico
       </h1>
 
-<form action="">
-    <section class="formsection--wrapper">
-    <label for="name" autofocus>Full Name</label>
-    <input type="text" id="name" name="name" placeholder="Type name">
-        </section>
+      <nav id="nav__default"></nav>
+    </header>
 
-    
-    <section class="formsection--wrapper">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email"\>
-    </section>
-    
-    <section class="formsection--wrapper"> 
-    <label for="message">Message</label>
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a message"></textarea>
-     </section> 
-    
-    <section class="formsection--formbuttoncontainer">
-    <button type="reset" class="form--button" id="reset">Reset</button>
-    <button type="submit" class="form--button" id="submit">Submit</button>
-    </section>
-    
+    <h1 class="pagetitle">Contact</h1>
+
+    <form action="">
+      <section class="formsection--wrapper">
+        <label for="name" autofocus>Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Type name" />
+      </section>
+
+      <section class="formsection--wrapper">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          \
+        />
+      </section>
+
+      <section class="formsection--wrapper">
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Write a message"
+        ></textarea>
+      </section>
+
+      <section class="formsection--formbuttoncontainer">
+        <button type="reset" class="form--button" id="reset">Reset</button>
+        <button type="submit" class="form--button" id="submit">Submit</button>
+      </section>
     </form>
-    
+
     <footer>
-        Address: 1810 Costilla Street, Boston Ma <br />Hours: Monday-Sunday
-        9am-9pm <br />Phone Number: 161-810-271-821
-        <div id="logowrapper">
-          <img
-            src="images/Facebook.png"
-            alt="Facebook Logo"
-            class="footer--logo"
-          />
-          <img src="images/Twitter.png" alt="Twitter Logo" class="footer--logo" />
-          <img
-            src="images/Instagram.png"
-            alt="Instagram Logo"
-            class="footer--logo"
-          />
-        </div>
-      </footer>
-</body>
+      Address: 1810 Costilla Street, Boston Ma <br />Hours: Monday-Sunday
+      9am-9pm <br />Phone Number: 161-810-271-821
+      <div id="logowrapper">
+        <img
+          src="images/Facebook.png"
+          alt="Facebook Logo"
+          class="footer--logo"
+        />
+        <img src="images/Twitter.png" alt="Twitter Logo" class="footer--logo" />
+        <img
+          src="images/Instagram.png"
+          alt="Instagram Logo"
+          class="footer--logo"
+        />
+      </div>
+    </footer>
+    <script src="MexicanRestaurant.js"></script>
+  </body>
 </html>

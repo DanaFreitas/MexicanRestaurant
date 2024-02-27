@@ -271,3 +271,41 @@ need let thehref=pagename[i].getAttribute("href");
 is it best practice to have the list of links in arrays together
 
 does using notes.txt mess with the livesass
+
+
+
+do something about the menu
+
+issues: get rid of the slideout menu. it doesnt work as well when the transitions are with different sites
+
+contact.html button isnt working. 
+
+careers text needs a margin help
+        a bunch do
+
+location.html isnt working
+        the hamburger button
+
+the header needs a "top 0" if fixed to not move with the title being margin-topped
+
+the button doesnt work for contact. idea: make a clone of it and see if the first version works. like issue with a loop.
+
+2/27
+
+just rided of slideout
+
+issues left:
+
+contact.html button not working...thats it really
+
+clamp()
+
+        .banner {
+          width: clamp(200px, 50% + 20px, 800px); /* Yes, you can do math inside clamp()! */
+        }
+
+        1rem   = 360px and below
+        Scaled = 361px - 839px
+        3.5rem = 840px and above
+
+        

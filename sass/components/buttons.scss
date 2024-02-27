@@ -1,14 +1,5 @@
 
 
-// button {width:100%;
-//     padding: 1rem 0 1rem 0;
-//     background-color:#a80000;
-//     font-family: rye;
-//     border:none;
-//     position:absolute;
-//     bottom: 0;
-// }
-
 .homesection__homepagebutton{width:100%;
     padding: 1rem 0 1rem 0;
     background-color:#a80000;
@@ -21,17 +12,16 @@ color:white;}
 
 
 
-.homesection__homepagebutton:nth-child(odd) {
-    background-color: #005200;
-    color:white;
-}
+// .homesection__homepagebutton:nth-child(odd) {
+//     background-color: #005200;
+//     color:white;
+// }
 
 
 
 .homesection__homepagebutton:hover {color:yellow;}
 
 #openingbutton {
-//display: grid; place-items:center;
 color:white;
 display: flex; 
 justify-content: center;
@@ -40,3 +30,5 @@ bottom:auto;
 width:60%;
 border-radius: 50% 50% 50% 50%;
 }
+
+#openingbutton:hover {color:yellow;}

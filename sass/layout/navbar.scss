@@ -3,12 +3,12 @@
 
 .header {
     z-index: 10;
-    //position: fixed;
     background-color: #005200;
     width: 100%;
     //display: grid;
   display:flex;
-
+position:fixed;
+top:0
    // grid-template: "p1" "p2";
   }
 

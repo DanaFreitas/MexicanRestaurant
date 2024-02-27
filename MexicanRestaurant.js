@@ -4,18 +4,19 @@ const ham = document.getElementById("hamburger");
 const title = document.getElementById("title");
 
 title.addEventListener("click", (event) => {
-window.location.href="careers.html";
+window.location.href="index.html";
 })
 
 const pagename = document.getElementsByClassName("header__defaultmenu--item");
 
-
+console.log(pagename)
 
 //location.href="index.html"  
 let test = []
 
 console.log(test)
 for (let i = 0; i < pagename.length; i++){
+  console.log(pagename[i])
 let thehref=pagename[i].getAttribute("href");
 test.push(thehref)
 }

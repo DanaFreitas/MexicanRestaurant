@@ -40,11 +40,6 @@ h1 header {
   color: white;
 }
 
-.homesection__homepagebutton:nth-child(odd) {
-  background-color: #005200;
-  color: white;
-}
-
 .homesection__homepagebutton:hover {
   color: yellow;
 }
@@ -57,6 +52,10 @@ h1 header {
   bottom: auto;
   width: 60%;
   border-radius: 50% 50% 50% 50%;
+}
+
+#openingbutton:hover {
+  color: yellow;
 }
 
 .section--imagecontainer {
@@ -124,10 +123,10 @@ ul {
   overflow-x: hidden;
   margin: 0;
   animation-direction: normal;
-  animation-duration: 0.75s;
+  animation-duration: 0s;
   text-align: center;
-  margin-top: 4.5rem;
-  color: white;
+  margin-top: 4rem;
+  color: #a80000;
 }
 
 .menuclassenter {
@@ -145,19 +144,9 @@ ul {
   animation-direction: normal;
   animation-duration: 0.75s;
   text-align: center;
-  margin-top: 4.5rem;
+  margin-top: 4rem;
 }
 
-@keyframes menudisappear {
-  0% {
-    transform: translate(0px, 0px);
-    display: block;
-  }
-  100% {
-    transform: translate(-100%, 0px);
-    display: none;
-  }
-}
 @keyframes menuappear {
   0% {
     transform: translate(-500px, 0px);
@@ -168,17 +157,17 @@ ul {
 }
 .header__defaultmenu--item {
   left: 0;
-  font-size: 1em;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1em;
   color: black;
   text-decoration: none;
 }
 
 .header__defaultmenu--item:hover:hover {
-  color: white;
+  color: #a80000;
 }
 
 .header__responsivemenu--wrapper {
@@ -206,7 +195,7 @@ ul {
   }
 }
 .header__responsivemenu--item:hover {
-  color: white;
+  color: #a80000;
 }
 
 .section {
@@ -266,7 +255,8 @@ legend {
 }
 
 .pagetitle {
-  top: 0;
+  margin-top: 4rem;
+  top: 0rem;
   font-family: "Rye", serif;
   background-color: #a80000;
 }
@@ -303,6 +293,8 @@ footer {
   background-color: #005200;
   width: 100%;
   display: flex;
+  position: fixed;
+  top: 0;
 }
 
 @media screen and (min-width: 481px) {
@@ -442,6 +434,9 @@ footer {
   position: absolute;
   top: 0;
   font-size: 2.5rem;
+  background-color: #005200;
+  width: 100%;
+  color: white;
 }
 
 .menu__food--title {

@@ -17,6 +17,8 @@ ul {
       display: none;
     }
   }
+
+  
   .menuclassexit {
     animation-name: menudisappear;
     transition: 1s;
@@ -32,10 +34,10 @@ ul {
     overflow-x: hidden;
     margin: 0;
     animation-direction: normal;
-    animation-duration: 0.75s;
+    animation-duration: 0s;
     text-align: center;
-    margin-top: 4.5rem;
-    color: white;
+    margin-top: 4rem;
+    color: #a80000;
   }
   
   .menuclassenter {
@@ -53,19 +55,19 @@ ul {
     animation-direction: normal;
     animation-duration: 0.75s;
     text-align: center;
-    margin-top: 4.5rem;
+    margin-top: 4rem;
   }
   
-  @keyframes menudisappear {
-    0% {
-      transform: translate(0px, 0px);
-      display: block;
-    }
-    100% {
-      transform: translate(-100%, 0px);
-      display: none;
-    }
-  }
+  //  @keyframes menudisappear {
+  //    0% {
+  //      transform: translate(0px, 0px);
+  //      display: block;
+  //    }
+  //    100% {
+  //      transform: translate(-100%, 0px);
+  //      display: none;
+  //    }
+  //  }
   @keyframes menuappear {
     0% {
       transform: translate(-500px, 0px);
@@ -76,17 +78,17 @@ ul {
   }
   .header__defaultmenu--item {
     left: 0;
-    font-size: 1em;
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
     color: black;
     text-decoration: none;
   }
   
   .header__defaultmenu--item:hover:hover {
-    color: white;
+    color: #a80000;
   }
   
   .header__responsivemenu--wrapper {
@@ -109,13 +111,12 @@ ul {
     .header__responsivemenu--item {
       font-size: 1rem;
       z-index: 11;
-     // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       color: black;
       text-decoration: none;
     }
   }
   .header__responsivemenu--item:hover {
-    color: white;
+    color: #a80000;
   }
   
   .section {
