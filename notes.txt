@@ -308,4 +308,157 @@ clamp()
         Scaled = 361px - 839px
         3.5rem = 840px and above
 
-        
+did lots of notes on clamp(), min() or max()
+
+
+elements and their widths
+
+
+
+min .form {
+    width: min(600px, 90vw);
+}
+
+the form will be whichever is smaller
+        so if 670px, or niewm the smallest will be 600px as a max
+
+
+title: in navbar, max
+	out, min
+
+769
+
+
+menu
+	burger, max
+	on top, min
+background image of opening
+	clamp
+call to action
+	clamp
+sections
+	stacked, max
+	side by side, min
+
+section title
+	stacked, max
+	side by side, min
+section background image
+	stacked, max
+	side by side, min
+call to action 	
+	stacked, max
+	side by side, min
+
+menu
+
+title: in navbar, max
+	out, min
+
+all of the sections
+	stacked, max
+	pc,min
+
+catering
+
+title: in navbar, max
+	out, min
+
+all of the sections
+	stacked, max
+	pc,min	
+
+
+directions
+
+everything
+	clamp
+
+
+
+careers
+everything
+	clamp
+
+contct
+everything
+	clamp
+
+
+
+
+the issue with the burgerholder responsive is that its a container and not visible
+        do for the hamburger bits. the visible stuff, not the backgrounds
+                use clamp
+
+                 width:min(20vw,768px)
+                              10vw ,15vw,768px 
+                                maybe something like this?
+
+
+for the call to action button, I need to make the tetxt as responsive as the button itself
+        used 4vw
+
+need to figure out the "about us" part.         
+         a random image with the text wrapped ot next to it seems...tacjy.
+        investigate what other sites do. 
+                also the text
+
+2/28
+
+it goes from "powershell" to "node" because sass is likely a node.js script
+
+maybe issue for me is too many powershells
+
+issue: the buttons dont stick out enough. they just look like section headers
+
+have smaller, white buttnos with a background of....
+        maybe darken the backgrounds and have the buttons bottom middle?
+
+OR...I could just go and remove the background colors around the subsection titles
+
+maybe i meet in the middle     
+        darken the background, have the titles be white and the buttons colorfful in the middle
+
+This...entire time, the "backgrounds" mixin hasnt been working. I ahould either try try to fix it, or move stuff around
+        are there other sections besides home that could use darkened background images?
+...wrong about being wrong. the mixin IS working, its just applied to the menu and catering, not the backgrounds of the home page.
+        likely need to do that and mess with the buttons there          
+        alternate between red and green?
+                have text too?
+
+2/29
+
+adjust the shadow amounts
+make sure the texts are above the shading
+
+3/1
+
+the first background image is too long.
+
+also a problem with the menu description.
+
+maybe have only SOME images be darkened
+        dark if description     
+        light if not description
+
+might be able to get rid of the titles...
+        but first I need to center those images
+
+I took the images, gave them some padding (width 80%) and a box shadow. it feels soooo much more...alive
+
+make sure the "who we are" section isnt in a box
+fix that tiny bit of difference between images and the box
+        maybe do with other pages too?
+
+3/2
+tried to fix the image, couldnt do
+
+made the text vw
+
+make the headerwrapper for the nav display:none when ipad size
+have the sections be side to side by ipad size
+
+foe the burger have a max width
+
+for the responsive title, should i have a second copy of it, or try to move it?

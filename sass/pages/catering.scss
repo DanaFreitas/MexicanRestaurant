@@ -1,3 +1,5 @@
+@import "../abstracts/mixins.scss";
+
 
 .catering__food--title {
     position: absolute;
@@ -8,10 +10,9 @@ z-index: 2;
 }
 
   
-.catering__food--shade { width:100%;  aspect-ratio: 1/1.2; background: rgba(0, 0, 0, 0.99);
-  position: absolute;
-  top: 0;
-  left: 0;}
+ .catering__food--shade { 
+  @include ShadedImage;
+ }
 
 
 

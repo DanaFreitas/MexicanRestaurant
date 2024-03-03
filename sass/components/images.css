@@ -11,10 +11,6 @@ img {
   aspect-ratio: 1/1.2;
 }
 
-#buildinginside {
-  aspect-ratio: 1/1.5;
-}
-
 .menu__food {
   background: 255, 255, 0, 0.3;
   opacity: 50%;
@@ -31,4 +27,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.3;
-}/*# sourceMappingURL=images.css.map */
+}
+
+/*# sourceMappingURL=images.css.map */

@@ -31,13 +31,13 @@ h1 header {
 
 .homesection__homepagebutton {
   width: 100%;
-  padding: 1rem 0 1rem 0;
   background-color: #a80000;
   font-family: rye;
   border: none;
   position: absolute;
   bottom: 0;
   color: white;
+  font-size: 1.2rem;
 }
 
 .homesection__homepagebutton:hover {
@@ -52,12 +52,31 @@ h1 header {
   bottom: auto;
   width: 60%;
   border-radius: 50% 50% 50% 50%;
+  font-size: 4vw;
+  padding: 1.5rem;
 }
 
 #openingbutton:hover {
   color: yellow;
 }
 
+#title2 {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  #title2 {
+    display: block;
+    width: 100%;
+    background-color: green;
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    flex: 1;
+    text-align: center;
+    bottom: 87%;
+  }
+}
 .section--imagecontainer {
   background: 255, 255, 0, 0.3;
   opacity: 50%;
@@ -69,10 +88,6 @@ h1 header {
 img {
   width: 100%;
   aspect-ratio: 1/1.2;
-}
-
-#buildinginside {
-  aspect-ratio: 1/1.5;
 }
 
 .menu__food {
@@ -103,7 +118,7 @@ ul {
   display: none;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   #nav_default {
     display: none;
   }
@@ -174,7 +189,7 @@ ul {
   display: none;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   .header__responsivemenu--wrapper {
     display: flex;
     flex-direction: row;
@@ -188,7 +203,6 @@ ul {
     margin: 0.8rem;
   }
   .header__responsivemenu--item {
-    font-size: 1rem;
     z-index: 11;
     color: black;
     text-decoration: none;
@@ -204,7 +218,7 @@ ul {
 
 @media screen and (min-width: 769px) {
   .scrollitem {
-    font-size: 1.5rem;
+    font-size: 3.5vw;
   }
 }
 form {
@@ -297,7 +311,7 @@ footer {
   top: 0;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   .header__burgerholder {
     display: none;
   }
@@ -315,6 +329,11 @@ footer {
   margin-left: 1rem;
 }
 
+@media screen and (min-width: 769px) {
+  .header_default--wrapper {
+    display: none;
+  }
+}
 .header__hamburger {
   left: 0vw;
   top: 0vw;
@@ -325,11 +344,14 @@ footer {
 }
 
 .header__hamburger--hamburger-bit {
-  width: 3em;
   height: 0.5em;
   background-color: #a80000;
   margin: 0.5em 0;
   transition: 0.4s;
+}
+
+.header__hamburger--hamburger-bit {
+  width: clamp(10vw, 15vw, 768px);
 }
 
 .show > .header__hamburger--hamburger-bit {
@@ -360,8 +382,9 @@ footer {
   margin: auto;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   .title {
+    display: none;
     font-size: 4rem;
     flex: 1;
     text-align: center;
@@ -371,7 +394,7 @@ footer {
     margin-right: 1rem;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   .header__burgerholder > .header__hamburger > * {
     display: none;
   }
@@ -404,6 +427,16 @@ footer {
   text-align: center;
 }
 
+#openingsection {
+  margin-top: 5rem;
+}
+
+#WhoWeAre {
+  box-shadow: none;
+  width: 100%;
+  aspect-ratio: auto;
+}
+
 #Story {
   padding: 3rem;
   margin-top: 2rem;
@@ -414,9 +447,23 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
   position: relative;
   text-align: left;
+  aspect-ratio: 1/1.2;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 1rem;
+  box-shadow: 1px 5px 5px 1px black;
+}
+
+@media screen and (min-width: 769px) {
+  .homesection {
+    height: 80vh;
+    width: 100vw;
+  }
+}
+.homesection--imagecontainer {
+  overflow: hidden;
 }
 
 .section--contactus {
@@ -434,9 +481,12 @@ footer {
   position: absolute;
   top: 0;
   font-size: 2.5rem;
-  background-color: #005200;
   width: 100%;
   color: white;
+}
+
+#Story--title {
+  color: black;
 }
 
 .menu__food--title {
@@ -499,7 +549,7 @@ footer {
 .catering__food--shade {
   width: 100%;
   aspect-ratio: 1/1.2;
-  background: rgba(0, 0, 0, 0.99);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;

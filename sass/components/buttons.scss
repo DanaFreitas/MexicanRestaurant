@@ -1,21 +1,19 @@
 
 
 .homesection__homepagebutton{width:100%;
-    padding: 1rem 0 1rem 0;
+    //padding: 1rem 0 1rem 0;
+    //margin-bottom: 1rem;
     background-color:#a80000;
     font-family: rye;
     border:none;
     position:absolute;
     bottom: 0;
-color:white;}
+color:white;
+font-size: 1.2rem;}
 
 
 
 
-// .homesection__homepagebutton:nth-child(odd) {
-//     background-color: #005200;
-//     color:white;
-// }
 
 
 
@@ -29,6 +27,32 @@ align-items: center ;
 bottom:auto;
 width:60%;
 border-radius: 50% 50% 50% 50%;
+font-size: 4vw;
+padding:1.5rem;
 }
 
 #openingbutton:hover {color:yellow;}
+
+#title2 {
+    display:none;
+}
+
+@media screen and (min-width: 769px) {
+    #title2 {
+        display:block;
+        width:100%;
+        //margin-top: 0%;
+        background-color: green;
+        color:white;
+        position: absolute;
+        font-size: 3rem;
+        flex: 1;
+        text-align: center;
+        //margin: 0% 40% 30% 40%;
+        bottom:87%;
+      }
+    }
+
+
+ 
+  

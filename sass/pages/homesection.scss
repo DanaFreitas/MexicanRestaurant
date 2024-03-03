@@ -1,15 +1,43 @@
+@import "../abstracts/mixins.scss";
+
+#openingsection {margin-top: 5rem;}
+
+
+#WhoWeAre {
+   box-shadow: none;
+   width:100%;
+   aspect-ratio: auto;
+  }
+
 #Story {padding:3rem; margin-top: 2rem;}
 
 
 .homesection { display:flex; flex-direction: column; justify-content: center; align-items: center;
-    margin-bottom: 1rem;
+    
      position:relative;
      text-align: left; 
-   }
+     aspect-ratio:1 / 1.2 ;
+    margin: auto;
+    width:80%;
+  margin-bottom: 1rem;
+    box-shadow: 1px 5px 5px 1px black;
+  }
+
+  
+  @media screen and (min-width: 769px) {
+.homesection{height:80vh;
+width:100vw;}
+  }
+  
+.homesection--imagecontainer {
+ // box-shadow: 4rem black;
+//display: none;
+overflow: hidden;
+}
+
+
 
 .section--contactus {
-    // background-color: #005200;
-     //color:white;
      height:25rem;
  }
  
@@ -26,8 +54,10 @@
   position: absolute;
   top:0;
   font-size: 2.5rem;
-  background-color:#005200;
+ // background-color:#005200;
   width:100%;
 color:white;
 }
   
+
+#Story--title { color: black;}

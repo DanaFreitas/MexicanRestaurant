@@ -12,7 +12,7 @@ ul {
     display: none;
   }
   
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     #nav_default {
       display: none;
     }
@@ -95,7 +95,7 @@ ul {
     display: none;
   }
   
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     .header__responsivemenu--wrapper {
       display: flex;
       flex-direction: row;
@@ -109,7 +109,7 @@ ul {
       margin: 0.8rem;
     }
     .header__responsivemenu--item {
-      font-size: 1rem;
+     // font-size: 1rem;
       z-index: 11;
       color: black;
       text-decoration: none;
@@ -125,7 +125,8 @@ ul {
   
   @media screen and (min-width: 769px) {
     .scrollitem {
-      font-size: 1.5rem;
+      //font-size: 1.5rem;
+      font-size: 3.5vw;
     }
   }
   
