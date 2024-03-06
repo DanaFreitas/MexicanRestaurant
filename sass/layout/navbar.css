@@ -47,7 +47,7 @@
 }
 
 .header__hamburger--hamburger-bit {
-  width: clamp(10vw, 15vw, 768px);
+  width: clamp(3rem, 5vw, 200px);
 }
 
 .show > .header__hamburger--hamburger-bit {

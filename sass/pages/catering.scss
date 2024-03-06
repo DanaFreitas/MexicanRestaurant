@@ -17,9 +17,13 @@ z-index: 2;
 
 
    .cateringsection { display:flex; flex-direction: column; justify-content: center; align-items: center;
+    width:80%;
+    margin:auto;
      margin-bottom: 1rem;
       position:relative;
       text-align: center; 
+      box-shadow: 1px 5px 5px 1px black;
+
     }
 
   

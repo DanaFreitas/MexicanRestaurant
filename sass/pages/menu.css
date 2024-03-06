@@ -20,9 +20,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
   margin-bottom: 1rem;
   position: relative;
   text-align: center;
+  box-shadow: 1px 5px 5px 1px black;
+  width: 80%;
 }
 
 .menu__item--wrapper {

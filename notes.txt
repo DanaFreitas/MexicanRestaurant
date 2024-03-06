@@ -462,3 +462,53 @@ have the sections be side to side by ipad size
 foe the burger have a max width
 
 for the responsive title, should i have a second copy of it, or try to move it?
+
+fix the grid for the sections
+
+3/4
+
+cant have the homesection AND the grid wrapper both be active at once
+
+the text based sections are having scaling problems
+
+cant use p for contain, only div
+
+space between, no size at end
+space around, half size at end
+space evenly, whole size at end
+
+
+have the responsivemenu buttons work too
+have a max size for the hamburger button
+
+should i treat the menus the same way as the sections?
+        probably.
+
+
+3/5
+
+adding the grids has been fine so far.
+need to 
+        make a mixin for all of the section box styles
+        have a max...or a min for the width of the sections             
+                be 100% when movile, 80% when pc
+                        clamp
+
+some of the menus are wonky on top in pc mode  
+        has something to do with 
+                .header__defaultmenu--item being the default on the messed up one
+        fixed. bad tags
+
+todo
+
+make footer look better responsive
+        100% width
+make the iframe responsve
+        clamp the width...and the hight. aspect ratio
+                default 100%, unless the width is x, thnen certain percentage
+                        ...then max it
+
+3/6
+need to make menu buttons work
+and gridize the homepage
+        check

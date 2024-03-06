@@ -1,14 +1,25 @@
 footer {
   background-color: #005200;
   color: White;
-  font-size: 0.75rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0.5rem;
+  width: 100%;
 }
 
+.footer__address {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .footer__address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
 .footer--logo {
   height: 2rem;
   width: 2rem;
@@ -23,4 +34,6 @@ footer {
 
 #questionmark {
   letter-spacing: 2rem;
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,9 +1,20 @@
 .iframe {
-    width:100%;
+    //width:100%;
+
+    //width:max(100%,25vw);
+width:max(100%, 200px);
+
     aspect-ratio: 1/1.2;
     
-    padding: 1rem 0 1rem 0;
+ //   padding: 1rem 0 1rem 0;
+
+
+//width:clamp(100%,25vw,40vw)
+
+
 }
+
+
 
 .directions__text {
 text-align: center;

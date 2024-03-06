@@ -1,6 +1,29 @@
 @import "../abstracts/mixins.scss";
 
+
+.homesection { display:flex; flex-direction: column; justify-content: center; align-items: center;
+    
+  position:relative;
+  text-align: left; 
+  aspect-ratio:1 / 1.2 ;
+ margin: auto;
+ width:80%;
+margin-bottom: 1rem;
+ box-shadow: 1px 5px 5px 1px black;
+}
+
 #openingsection {margin-top: 5rem;}
+
+.home__subtitle {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+position: absolute;
+top:0;
+font-size: 2.5rem;
+width:100%;
+color:white;
+}
 
 
 #WhoWeAre {
@@ -9,55 +32,52 @@
    aspect-ratio: auto;
   }
 
-#Story {padding:3rem; margin-top: 2rem;}
-
-
-.homesection { display:flex; flex-direction: column; justify-content: center; align-items: center;
-    
-     position:relative;
-     text-align: left; 
-     aspect-ratio:1 / 1.2 ;
-    margin: auto;
-    width:80%;
-  margin-bottom: 1rem;
-    box-shadow: 1px 5px 5px 1px black;
-  }
-
-  
   @media screen and (min-width: 769px) {
-.homesection{height:80vh;
-width:100vw;}
-  }
-  
+    #WhoWeAre{
+    //{height:90vh;
+    //width:100vw;}
+    height:40vh;
+  aspect-ratio: auto;    
+  }}
+     
+
+
+//#Story {padding:3rem; margin-top: 2rem;}
+
+#Story--title { color: black;}
+
+
+
+
+ 
+
+
+
+
+
 .homesection--imagecontainer {
- // box-shadow: 4rem black;
-//display: none;
 overflow: hidden;
 }
 
 
 
-.section--contactus {
-     height:25rem;
+.homesection--contactus {
+  aspect-ratio: auto;
+  margin-bottom: auto;
+  padding:1.2em;
+  margin-bottom: 1rem;
+  font-size: calc(15px + 0.390625vw);
  }
  
- #questionmark {
-     font-size: 32px;
+ .contact__questionmark {
+  display: flex; flex-direction: row; justify-content: space-around;
+  font-size: 3rem;
+
  }
+
+
 
  
 
-.home__subtitle {
-    font-family: "Rye", serif;
-    font-weight: 400;
-    font-style: normal;
-  position: absolute;
-  top:0;
-  font-size: 2.5rem;
- // background-color:#005200;
-  width:100%;
-color:white;
-}
-  
 
-#Story--title { color: black;}
+
