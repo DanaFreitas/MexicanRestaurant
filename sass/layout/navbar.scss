@@ -1,14 +1,18 @@
+@import "../abstracts/variables.scss";
 
 
 
 .header {
     z-index: 10;
-    background-color: #005200;
+    //background-color: #005200;
+    background-color: $DarkGreenColor;
     width: 100%;
     //display: grid;
   display:flex;
 position:fixed;
-top:0
+top:0;
+flex-direction:row;
+justify-content: space-around;
    // grid-template: "p1" "p2";
   }
 
@@ -62,7 +66,7 @@ top:0
   .header__hamburger--hamburger-bit {
 
     height: 0.5em;
-    background-color: #a80000;
+    background-color: $DarkRedColor;
     margin: 0.5em 0;
     transition: 0.4s;
   }

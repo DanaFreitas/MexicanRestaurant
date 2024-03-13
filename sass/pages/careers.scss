@@ -1,9 +1,15 @@
-p {margin: 1rem;}
 
 
 .fieldset {
     display:flex; flex-direction: column; 
     //display:grid;grid-template-columns: 10% 20% 70%; justify-items:stretch;
+    margin: auto;
+    width:15rem;
 }
 
-.career__label{padding: 1rem;}
+
+
+
+.legend {text-align: center;}
+
+.career__label{padding: 1rem; font-size: 1em;}

@@ -29,6 +29,17 @@ h1 header {
   font-family: rye, serif;
 }
 
+p {
+  text-align: center;
+}
+
+.text__description {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0 0 0;
+}
+
 .homesection__homepagebutton {
   width: 100%;
   background-color: #a80000;
@@ -74,7 +85,6 @@ h1 header {
     font-size: 3rem;
     flex: 1;
     text-align: center;
-    bottom: 87%;
   }
 }
 .section--imagecontainer {
@@ -194,7 +204,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    flex-shrink: 0;
     height: 4rem;
     grid-area: p2;
     padding: 0.5rem;
@@ -204,7 +214,7 @@ ul {
   }
   .header__responsivemenu--item {
     z-index: 11;
-    color: black;
+    color: white;
     text-decoration: none;
   }
 }
@@ -234,25 +244,31 @@ form > input {
 .formsection--wrapper {
   display: flex;
   flex-direction: column;
-  margin: 1em 0 1em 0;
 }
 
-.formsection--formbuttoncontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.formsection--wrapper {
+  width: min(100%, 15rem);
+  margin: auto;
+}
+
+.formsection--wrapper > * {
+  margin: 0.25rem;
+}
+
+label {
+  font-size: 1.5rem;
 }
 
 .form--button {
   width: 100%;
-  padding: 1rem 0 1rem 0;
+  padding: 0.25rem 0 0.25rem 0;
   background-color: #a80000;
-  font-family: rye;
   border: none;
-  margin-top: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
   display: flex;
   flex-direction: column;
   color: white;
+  box-shadow: 1px 4px 4px 1px black;
 }
 
 #submit {
@@ -260,12 +276,11 @@ form > input {
 }
 
 .form--button:hover {
-  color: yellow;
+  color: #a80000;
 }
 
 legend {
   font-size: 1.5rem;
-  font-family: rye, serif;
 }
 
 .pagetitle {
@@ -279,15 +294,17 @@ legend {
 footer {
   background-color: #005200;
   color: White;
-  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 15vh;
 }
 
 .footer__address {
   width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
 @media screen and (min-width: 769px) {
@@ -321,6 +338,8 @@ footer {
   display: flex;
   position: fixed;
   top: 0;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 769px) {
@@ -432,20 +451,27 @@ footer {
 @media screen and (min-width: 769px) {
   .section__responsivewrapper {
     display: grid;
-    width: 100%;
+    width: 80%;
+    row-gap: 1%;
+    column-gap: 5%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    margin: 10%;
   }
 }
 .iframe {
-  width: max(100%, 200px);
+  width: min(100%, 30rem);
   aspect-ratio: 1/1.2;
-}
-
-.directions__text {
   text-align: center;
+  display: block;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
 }
 
+@media screen and (min-width: 769px) {
+  .iframe {
+    aspect-ratio: 1/1;
+  }
+}
 .homesection {
   display: flex;
   flex-direction: column;
@@ -455,13 +481,16 @@ footer {
   text-align: left;
   aspect-ratio: 1/1.2;
   margin: auto;
-  width: 80%;
+  width: min(100vw, 85%);
   margin-bottom: 1rem;
   box-shadow: 1px 5px 5px 1px black;
 }
 
 #openingsection {
   margin-top: 5rem;
+  width: min(100vw, 30rem);
+  aspect-ratio: auto;
+  transform: scale(0.8);
 }
 
 .home__subtitle {
@@ -477,14 +506,13 @@ footer {
 
 #WhoWeAre {
   box-shadow: none;
-  width: 100%;
+  width: 80%;
   aspect-ratio: auto;
 }
 
 @media screen and (min-width: 769px) {
   #WhoWeAre {
-    height: 40vh;
-    aspect-ratio: auto;
+    height: 20vh;
   }
 }
 #Story--title {
@@ -508,6 +536,10 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   font-size: 3rem;
+}
+
+#Anythingtosay {
+  margin-bottom: 1rem;
 }
 
 .menu__food--title {
@@ -537,7 +569,7 @@ footer {
   position: relative;
   text-align: center;
   box-shadow: 1px 5px 5px 1px black;
-  width: 80%;
+  width: 100%;
 }
 
 .menu__item--wrapper {
@@ -584,7 +616,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: auto;
   margin-bottom: 1rem;
   position: relative;
@@ -614,26 +646,20 @@ footer {
   width: 80%;
 }
 
-.iframe {
-  width: max(100%, 200px);
-  aspect-ratio: 1/1.2;
-}
-
-.directions__text {
-  text-align: center;
-}
-
-p {
-  margin: 1rem;
-}
-
 .fieldset {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 15rem;
+}
+
+.legend {
+  text-align: center;
 }
 
 .career__label {
   padding: 1rem;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */

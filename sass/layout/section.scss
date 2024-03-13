@@ -1,11 +1,11 @@
-
+@import "../abstracts/variables.scss";
 
 
 
 .section--sectiondescription {
     position: absolute; 
     text-align: center;
-    background-color: #005200;
+    background-color: $DarkGreenColor;
   color:white;
   }
 
@@ -17,10 +17,12 @@
    
     
   display: grid;
-  width:100%;
+  width:80%;
+  row-gap:1%;
+  column-gap: 5%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  
-  }
+  //grid-template-rows: 1fr 1fr;
+  margin: 10%;
+}
   
   }

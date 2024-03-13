@@ -2,4 +2,15 @@ h1 header {
   font-family: rye, serif;
 }
 
+p {
+  text-align: center;
+}
+
+.text__description {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0 0 0;
+}
+
 /*# sourceMappingURL=typography.css.map */

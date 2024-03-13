@@ -84,7 +84,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    flex-shrink: 0;
     height: 4rem;
     grid-area: p2;
     padding: 0.5rem;
@@ -94,7 +94,7 @@ ul {
   }
   .header__responsivemenu--item {
     z-index: 11;
-    color: black;
+    color: white;
     text-decoration: none;
   }
 }

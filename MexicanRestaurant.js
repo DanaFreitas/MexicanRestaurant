@@ -13,29 +13,26 @@ const defaultMenuArray = Array.from(defaultMenuButton);
 const responsiveMenuArray = Array.from(responsiveMenuButton);
 
 const fusedMenuArray = defaultMenuArray.concat(responsiveMenuArray);
-console.log(fusedMenuArray)
 
 
 
 const grave = document.getElementsByClassName("grave__Grave--CrossWrapper");
 
+let contain = []
 
-let defaultlocationarray = [];
-let 
-
-for (let i = 0; i < defaultMenuButton.length; i++) {
-  console.log(defaultMenuButton[i]);
-  let thehref = defaultMenuButton[i].getAttribute("href");
-  test.push(thehref);
-  console.log(test)
+for (let i = 0; i < fusedMenuArray.length; i++) {
+  
+  let thehref = fusedMenuArray[i].getAttribute("href");
+  contain.push(thehref);
+  
 }
 
-for (let i = 0; i < defaultMenuButton.length; i++) {
-  defaultMenuButton[i].addEventListener("click", () => {
-    let thehref = defaultMenuButton[i].getAttribute("href");
+for (let i = 0; i < fusedMenuArray.length; i++) {
+  fusedMenuArray[i].addEventListener("click", () => {
+    let thehref = fusedMenuArray[i].getAttribute("href");
     let hrefslice = thehref.slice(1);
     window.location.href = `${hrefslice}.html`;
-    test = []
+    contain = []
   });
 }
 

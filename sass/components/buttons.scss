@@ -1,9 +1,10 @@
+@import "../abstracts/variables.scss";
 
 
 .homesection__homepagebutton{width:100%;
     //padding: 1rem 0 1rem 0;
     //margin-bottom: 1rem;
-    background-color:#a80000;
+    background-color:$DarkRedColor;
     font-family: rye;
     border:none;
     position:absolute;
@@ -49,7 +50,7 @@ padding:1.5rem;
         flex: 1;
         text-align: center;
         //margin: 0% 40% 30% 40%;
-        bottom:87%;
+        //bottom:92.5%;
       }
     }
 

@@ -1,14 +1,17 @@
-p {
-  margin: 1rem;
-}
-
 .fieldset {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 15rem;
+}
+
+.legend {
+  text-align: center;
 }
 
 .career__label {
   padding: 1rem;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=careers.css.map */

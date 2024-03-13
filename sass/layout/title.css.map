@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["title.scss"],"names":[],"mappings":"AAEA;EAEI;EAEA;EACA;EACA;EACA","file":"title.css"}
+{"version":3,"sourceRoot":"","sources":["title.scss","../abstracts/variables.scss"],"names":[],"mappings":"AAEA;EAEI;EAEA;EACA;EACA,kBCRW;EDSX","file":"title.css"}

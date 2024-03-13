@@ -510,5 +510,103 @@ make the iframe responsve
 
 3/6
 need to make menu buttons work
+        check 
+        fused two arrays and ran them together
 and gridize the homepage
         check
+
+
+
+make the iframe responsive
+        check, used min 
+fix widths
+make footer look better responsive
+        have the texts side to side after certain point
+
+for careers and contact us. have a max width to the elements
+        also make the buttons nicer
+
+3/7
+
+max width does
+        for the buttons, should they be horizontal or vertical when on pc       
+        still need to make nicer
+
+need to fix the careers, not the contact us
+
+
+GET RESETING problem
+        had made change on html career page
+                didnt save
+        made change on css     
+                did save all
+        did live site shortcut
+                html didnt change
+        needed to refresh
+
+
+got rid of the reset button
+
+what i should do now if try to fix all of the widths and the alignments
+        why does the pc header have that useless chunk to the right
+                the header doesnt need 100% of the width. its width100% causing that
+                the flexbox is based on that state before the 100% stretch, not after
+
+
+3/10
+
+need ot make the contact page taller?
+for the menu, try looking at the mozart menu to make full width
+width 100% helps with the gap, but I need to even out the items
+
+fixed tge bottom
+check if any issues iwth the menu animatiob
+fugyre iyt the columns
+
+animations fine
+
+BIG problem with the menus      
+        the title font size is static
+        the nenu item font sizes are not
+
+COULD solve by making the width 100%...maybe
+
+3/11
+
+general
+        center the footer
+                check
+home    
+        make the contact us bigger
+                check
+careers 
+        more margins between the elements
+                check
+directions      
+        need to center the text
+                check
+
+gave texts without a parent their own class.
+grouping them with texts with parents caused farmatting issues due to double counting of widths
+
+
+more issues
+        the formatting of the menu items isnt aligned with thet titles for the menu and catering        
+        in the pc version, there isnt any padding between the horizontally aligned images
+        i should make the colors variables declared in mixins considering how universally used they are
+                fixed
+
+tomorrow, go for the menu formatting issues
+        make max line width?
+                then what about the size of the backgrounds?
+also the horizontal padding issue       
+        make responsive, > 976px
+
+
+column and row gap
+
+3/12
+
+need to fix hero image size. too big on pc
+
+transform scale. nee to fix the padding
