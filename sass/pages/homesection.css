@@ -14,9 +14,11 @@
 
 #openingsection {
   margin-top: 5rem;
-  width: min(100vw, 30rem);
   aspect-ratio: auto;
-  transform: scale(0.8);
+}
+
+#buildinginside {
+  aspect-ratio: auto;
 }
 
 .home__subtitle {
@@ -51,8 +53,8 @@
 
 .homesection--contactus {
   aspect-ratio: auto;
-  margin-bottom: auto;
   padding: 1.2em;
+  margin-top: 5rem;
   margin-bottom: 1rem;
   font-size: calc(15px + 0.390625vw);
 }

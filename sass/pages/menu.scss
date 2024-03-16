@@ -1,60 +1,76 @@
+@import "../abstracts/variables.scss";
 
 .menu__food--title {
-    position: absolute;
-  top:1rem;
+  position: absolute;
+  top: 1rem;
   font-family: "Rye", serif;
-color:white;  
+  color: white;
 
-z-index: 2;
+  z-index: 2;
+  aspect-ratio: $MenuAspectRatio;
 }
 
-  
-.menu__food--shade { width:100%;  aspect-ratio: 1/1.2; background: rgba(0, 0, 0, 0.99);
+@media screen and (min-width: 769px) {
+  .menu__food--title {
+    aspect-ratio: $MenuAspectRatioResponsive;
+  }
+}
+
+.menu__food--shade {
+  width: 100%;
+  aspect-ratio: $MenuAspectRatio;
+  background: rgba(0, 0, 0, 0.99);
   position: absolute;
   top: 0;
-  left: 0;}
+  left: 0;
+}
 
-
-
-   .menusection { display:flex; flex-direction: column; justify-content: center; align-items: center;
-    margin: auto;
-    margin-bottom: 1rem;
-      position:relative;
-      text-align: center; 
-
-      box-shadow: 1px 5px 5px 1px black;
-
-    width:100%;
-
-    }
-
-  
-
-  .menu__item--wrapper {
-    //display: inline-block; 
-    position: absolute;
-    text-align: left; 
-    margin-top: 1rem;
-    padding:3vw;
-    color:white;
-    margin-left: 10%;
+@media screen and (min-width: 769px) {
+  .menu__food--shade {
+    aspect-ratio: $MenuAspectRatioResponsive;
   }
-  
-  
-  .menu__item {
+}
+
+.menusection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+
+  box-shadow: 1px 5px 5px 1px black;
+
+  width: 100%;
+  aspect-ratio: $MenuAspectRatio;
+}
+
+@media screen and (min-width: 769px) {
+  .menusection {
+    aspect-ratio: $MenuAspectRatioResponsive;
+  }
+}
+
+.menu__item--wrapper {
+  position: absolute;
+  text-align: left;
+  margin-top: 1rem;
+  padding: 3vw;
+  color: white;
+  margin-left: 10%;
+}
+
+.menu__item {
   font-weight: 600;
   line-height: 2rem;
   word-break: break-word;
-  width:80%;
-
-  }
-  
-
-.menu__item--description {
-  font-size: .75rem;
-  word-break: break-word;
-  width:80%;
+  width: 80%;
 }
 
-    
-  
+.menu__item--description {
+  font-size: 0.75rem;
+  word-break: break-word;
+  width: 80%;
+}

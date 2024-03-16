@@ -1,32 +1,17 @@
-.section--imagecontainer {
-  background: 255, 255, 0, 0.3;
-  opacity: 50%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 16 |     aspect-ratio: $MenuAspectRatioResponsive;
+ *    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\components\images.scss 16:19  root stylesheet */
 
-img {
-  width: 100%;
-  aspect-ratio: 1/1.2;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 16 \2502      aspect-ratio: $MenuAspectRatioResponsive;\d\a    \2502                    ^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\components\\images.scss 16:19  root stylesheet";
 }
-
-.menu__food {
-  background: 255, 255, 0, 0.3;
-  opacity: 50%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}
-
-.catering__food {
-  background: 255, 255, 0, 0.3;
-  opacity: 50%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}
-
-/*# sourceMappingURL=images.css.map */

@@ -1,95 +1,81 @@
 @import "../abstracts/mixins.scss";
 
+.homesection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.homesection { display:flex; flex-direction: column; justify-content: center; align-items: center;
-    
-  position:relative;
-  text-align: left; 
-  aspect-ratio:1 / 1.2 ;
- margin: auto;
- //width:80%;
-width:min(100vw,85%);
+  position: relative;
+  text-align: left;
+  aspect-ratio: 1 / 1.2;
+  margin: auto;
 
+  width: min(100vw, 85%);
 
-
-margin-bottom: 1rem;
- box-shadow: 1px 5px 5px 1px black;
+  margin-bottom: 1rem;
+  box-shadow: 1px 5px 5px 1px black;
 }
 
-#openingsection {margin-top: 5rem;
-//width: 50%;
-width:min(100vw,30rem);
-aspect-ratio: auto;
-transform: scale(.8);
+#openingsection {
+  margin-top: 5rem;
+
+  aspect-ratio: auto;
 }
 
-
-
-
+#buildinginside {
+  aspect-ratio: auto;
+}
 
 .home__subtitle {
   font-family: "Rye", serif;
   font-weight: 400;
   font-style: normal;
-position: absolute;
-top:0;
-font-size: 2.5rem;
-width:100%;
-color:white;
+  position: absolute;
+  top: 0;
+  font-size: 2.5rem;
+  width: 100%;
+  color: white;
 }
 
-
 #WhoWeAre {
-   box-shadow: none;
-   width:80%;
-   aspect-ratio: auto;
+  box-shadow: none;
+  width: 80%;
+  aspect-ratio: auto;
+}
+
+@media screen and (min-width: 769px) {
+  #WhoWeAre {
+    height: 20vh;
   }
-
-  @media screen and (min-width: 769px) {
-    #WhoWeAre{
-    height:20vh;
-  }}
-     
-
+}
 
 //#Story {padding:3rem; margin-top: 2rem;}
 
-#Story--title { color: black;}
-
-
-
-
- 
-
-
-
-
-
-.homesection--imagecontainer {
-overflow: hidden;
-
-
+#Story--title {
+  color: black;
 }
 
-
+.homesection--imagecontainer {
+  overflow: hidden;
+}
 
 .homesection--contactus {
   aspect-ratio: auto;
-  margin-bottom: auto;
-  padding:1.2em;
+  //margin-bottom: auto;
+  padding: 1.2em;
+  margin-top: 5rem;
   margin-bottom: 1rem;
   font-size: calc(15px + 0.390625vw);
- }
- 
- .contact__questionmark {
-  display: flex; flex-direction: row; justify-content: space-around;
+}
+
+.contact__questionmark {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   font-size: 3rem;
+}
 
- }
-
-#Anythingtosay {margin-bottom: 1rem;}
-
- 
-
-
-
+#Anythingtosay {
+  margin-bottom: 1rem;
+}

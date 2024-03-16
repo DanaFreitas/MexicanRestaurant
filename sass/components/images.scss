@@ -1,40 +1,39 @@
-
 @import "../abstracts/mixins.scss";
 
-
-
-
-
-.section--imagecontainer {  
-    @include BackgroundImage;
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
+.section--imagecontainer {
+  @include BackgroundImage;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-
-
 img {
-    width: 100%;
-    aspect-ratio: 1 / 1.2;  }
-  
-  
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+}
 
-// #buildinginside {
-//     aspect-ratio: 1 / 1.5;
-// }
-
+@media screen and (min-width: 769px) {
+  img {
+    aspect-ratio: $MenuAspectRatioResponsive;
+  }
+}
 
 .menu__food {
   @include BackgroundImage;
-  background-size:     cover;                      
-  background-repeat:   no-repeat;
-opacity:.3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  aspect-ratio: $MenuAspectRatio;
+}
+
+@media screen and (min-width: 769px) {
+  .menu__food {
+    aspect-ratio: $MenuAspectRatioResponsive;
+  }
 }
 
 .catering__food {
-    @include BackgroundImage;
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
-  opacity:.3;
-  }
+  @include BackgroundImage;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}

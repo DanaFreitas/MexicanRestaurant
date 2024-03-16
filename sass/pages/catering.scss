@@ -1,54 +1,48 @@
 @import "../abstracts/mixins.scss";
 
-
 .catering__food--title {
-    position: absolute;
-  top:1rem;
+  position: absolute;
+  top: 1rem;
   font-family: "Rye", serif;
-color:white;  
-z-index: 2;
+  color: white;
+  z-index: 2;
 }
 
-  
- .catering__food--shade { 
+.catering__food--shade {
   @include ShadedImage;
- }
+}
 
+.cateringsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 5px 5px 1px black;
+}
 
+.catering__item--wrapper {
+  position: absolute;
+  text-align: left;
+  margin-top: 1rem;
+  padding: 3vw;
+  color: white;
+  margin-left: 10%;
+}
 
-   .cateringsection { display:flex; flex-direction: column; justify-content: center; align-items: center;
-    width:100%;
-    margin:auto;
-     margin-bottom: 1rem;
-      position:relative;
-      text-align: center; 
-      box-shadow: 1px 5px 5px 1px black;
-
-    }
-
-  
-
-  .catering__item--wrapper {
-    position: absolute;
-    text-align: left; 
-    margin-top: 1rem;
-    padding:3vw;
-    color:white;
-    margin-left: 10%;
-  }
-  
-  
-  .catering__item {
+.catering__item {
   font-weight: 600;
   line-height: 2rem;
   word-break: break-word;
-  width:80%;
-
-  }
-  
+  width: 80%;
+}
 
 .catering__item--description {
-  font-size: .75rem;
+  font-size: 0.75rem;
   word-break: break-word;
-  width:80%;
+  width: 80%;
 }

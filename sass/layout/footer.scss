@@ -1,43 +1,45 @@
 @import "../abstracts/variables.scss";
 
+footer {
+  background-color: $DarkGreenColor;
+  color: White;
 
-footer {background-color:$DarkGreenColor;color:White; 
-    //font-size:.75rem; 
- //   text-align: left;
-    //width:100%;
-    display: flex; flex-direction: column; align-items: center;
-    //  padding-top: .5rem;
-    width:100%;
-    margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 15vh;
 }
 
+.footer__address {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
 
-
-    .footer__address {
-        //aspect-ratio: auto;
-        //margin-bottom: auto;
-        width:100%;
-        text-align: center;
-        margin: auto;
-    }
-
-
-     
 @media screen and (min-width: 769px) {
-    .footer__address {
-        display:flex;flex-direction: row; justify-content:space-evenly;
-     //   flex-shrink: 0;
-     width:100%;
-        
+  .footer__address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
-    }
-
-
-
+    width: 100%;
+  }
 }
 
-    .footer--logo {height: 2rem; width:2rem; margin: 1em 2em 1em 2em } 
+.footer--logo {
+  height: 2rem;
+  width: 2rem;
+  margin: 1em 2em 1em 2em;
+}
 
-#logowrapper {display:flex; flex-direction: row; justify-content:space-evenly; }
+#logowrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
-#questionmark {letter-spacing: 2rem;}
+#questionmark {
+  letter-spacing: 2rem;
+}

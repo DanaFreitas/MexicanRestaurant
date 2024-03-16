@@ -1,168 +1,120 @@
 @import "../abstracts/variables.scss";
 
-
-
 .header {
-    z-index: 10;
-    //background-color: #005200;
-    background-color: $DarkGreenColor;
-    width: 100%;
-    //display: grid;
-  display:flex;
-position:fixed;
-top:0;
-flex-direction:row;
-justify-content: space-around;
-   // grid-template: "p1" "p2";
+  z-index: 10;
+
+  background-color: $DarkGreenColor;
+  width: 100%;
+
+  display: flex;
+  position: fixed;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 769px) {
+  .header__burgerholder {
+    display: none;
   }
+}
 
-
-
-// .header__burgerholder {
-//   width:max(auto,768px)
-// }
-
-  
-  @media screen and (min-width: 769px) {
-    .header__burgerholder {
-      display: none;
-    }
-  }
-
-
-  
-  @media (pointer: fine) {
-    .header__hamburger:hover {
-      color: white;
-    }
-  }
-
-
-  .header_default--wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    grid-area: p1;
-    margin-left:1rem;
-  }
-
-
-  @media screen and (min-width: 769px) {
-    .header_default--wrapper {
-      display: none;
-    }
-  }
-
-  
-  .header__hamburger {
-    left: 0vw;
-    top: 0vw;
-    display: block;
-    z-index: 5;
-    margin-top: 1em;
-    cursor: pointer;
-  }
-  
-  .header__hamburger--hamburger-bit {
-
-    height: 0.5em;
-    background-color: $DarkRedColor;
-    margin: 0.5em 0;
-    transition: 0.4s;
-  }
-  
-  
-    .header__hamburger--hamburger-bit { width:clamp(3rem ,5vw,200px )
-     }
-
-
-
-
-
-
-
-
-  .show > .header__hamburger--hamburger-bit {
-    background-color: white;
-  }
-  
-  .show #hamburger-bit-1 {
-    transform: translate(0, 1em) rotate(-45deg);
-    transition-duration: 500ms;
-  }
-  
-  .show #hamburger-bit-2 {
-    opacity: 0;
-    transition-duration: 500ms;
-  }
-  
-  .show #hamburger-bit-3 {
-    transform: translate(0, -1em) rotate(45deg);
-    transition-duration: 500ms;
-  }
-  
-
-
-
-
-
-
-
-  .title {
+@media (pointer: fine) {
+  .header__hamburger:hover {
     color: white;
-    text-decoration: none;
-    font-size: 1.7rem;
-    font-family: "Rye", serif;
-    font-weight: 400;
-    margin: auto;
   }
+}
 
+.header_default--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  grid-area: p1;
+  margin-left: 1rem;
+}
 
-  
-
-
-
-  @media screen and (min-width: 769px) {
-
-
-
-    
-    .title {
-      display:none;
-      font-size: 4rem;
-      flex: 1;
-      text-align: center;
-      margin: 0% 40% 0% 40%;
-    }
-
-
-    .fa-solid {
-      margin-right: 1rem;
-    }
+@media screen and (min-width: 769px) {
+  .header_default--wrapper {
+    display: none;
   }
+}
 
+.header__hamburger {
+  left: 0vw;
+  top: 0vw;
+  display: block;
+  z-index: 5;
+  margin-top: 1em;
+  cursor: pointer;
+}
 
+.header__hamburger--hamburger-bit {
+  height: 0.5em;
+  background-color: $DarkRedColor;
+  margin: 0.5em 0;
+  transition: 0.4s;
+}
 
+.header__hamburger--hamburger-bit {
+  width: clamp(3rem, 5vw, 200px);
+}
 
+.show > .header__hamburger--hamburger-bit {
+  background-color: white;
+}
 
-  @media screen and (min-width: 769px) {
-    .header__burgerholder > .header__hamburger > * {
-      display: none;
-    }
+.show #hamburger-bit-1 {
+  transform: translate(0, 1em) rotate(-45deg);
+  transition-duration: 500ms;
+}
+
+.show #hamburger-bit-2 {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
+.show #hamburger-bit-3 {
+  transform: translate(0, -1em) rotate(45deg);
+  transition-duration: 500ms;
+}
+
+.title {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  margin: auto;
+}
+
+@media screen and (min-width: 769px) {
+  .title {
+    display: none;
+    font-size: 4rem;
+    flex: 1;
+    text-align: center;
+    margin: 0% 40% 0% 40%;
   }
-
-
-
 
   .fa-solid {
-    font-size: 2em;
-    margin-top: 0.85em;
-    color: black;
+    margin-right: 1rem;
   }
-  
-  @media (pointer: fine) {
-    .fa-solid:hover {
-      color: white;
-    }
+}
+
+@media screen and (min-width: 769px) {
+  .header__burgerholder > .header__hamburger > * {
+    display: none;
   }
-  
+}
+
+.fa-solid {
+  font-size: 2em;
+  margin-top: 0.85em;
+  color: black;
+}
+
+@media (pointer: fine) {
+  .fa-solid:hover {
+    color: white;
+  }
+}

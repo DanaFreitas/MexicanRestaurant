@@ -1,20 +1,10 @@
 @import "../abstracts/variables.scss";
-  
+
 .pagetitle {
-      //position: absolute;
-    margin-top: 4rem;
-    
-    top:0rem;
-    font-family: "Rye", serif;
-    background-color: $DarkRedColor;
-    width: 100%;
-    }
-    
-  
-// .section__food--title {
-//   //  position: absolute;
-//   top:0;
-//   font-family: "Rye", serif;
-//   background-color: #a80000;
-//   }
-  
+  margin-top: 4rem;
+
+  top: 0rem;
+  font-family: "Rye", serif;
+  background-color: $DarkRedColor;
+  width: 100%;
+}

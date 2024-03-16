@@ -4,17 +4,28 @@
   font-family: "Rye", serif;
   color: white;
   z-index: 2;
+  aspect-ratio: 0.8333333333;
 }
 
+@media screen and (min-width: 769px) {
+  .menu__food--title {
+    aspect-ratio: 0.7142857143;
+  }
+}
 .menu__food--shade {
   width: 100%;
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 0.8333333333;
   background: rgba(0, 0, 0, 0.99);
   position: absolute;
   top: 0;
   left: 0;
 }
 
+@media screen and (min-width: 769px) {
+  .menu__food--shade {
+    aspect-ratio: 0.7142857143;
+  }
+}
 .menusection {
   display: flex;
   flex-direction: column;
@@ -26,8 +37,14 @@
   text-align: center;
   box-shadow: 1px 5px 5px 1px black;
   width: 100%;
+  aspect-ratio: 0.8333333333;
 }
 
+@media screen and (min-width: 769px) {
+  .menusection {
+    aspect-ratio: 0.7142857143;
+  }
+}
 .menu__item--wrapper {
   position: absolute;
   text-align: left;

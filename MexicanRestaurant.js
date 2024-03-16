@@ -39,28 +39,6 @@ for (let i = 0; i < fusedMenuArray.length; i++) {
 
 
 
-
-// title.addEventListener("click", (event) => {
-//   const Mozartheader = document.getElementById("Mozart");
-//   event.preventDefault();
-//   Mozartheader.scrollIntoView({
-//     behavior: "smooth",
-//     block: "start",
-//     inline: "start",
-//   });
-// });
-
-
-
-//  let section = document.getElementsByClassName("section");
-//  let totalSectionHeight = 0;
-//  for (let i = 0; i < sections.length; i++) {
-//    totalSectionHeight += sections[i].offsetHeight;
-//  }
-
-// Set your variable 1000 pixels below the total section height
-//let adjustedsection = totalSectionHeight + 1000;
-
 let section = document.getElementsByClassName("section");
 function getElementPositionRelativeToDocument(section) {
   let rect = section.getBoundingClientRect();
@@ -119,12 +97,6 @@ for (let l = 0; l < defaultMenuButton.length; l++) {
   defaultMenuButton[l].addEventListener("click", (event) => {
     event.preventDefault();
     let section = document.getElementsByClassName("section");
-
-    //    section[l].scrollIntoView({
-    //   behavior: "smooth",
-    //    block: "start",
-    //  inline: "nearest",
-    //});
 
     const respon = document.getElementsByClassName("header__defaultmenu--item");
     document.getElementById("hamburger").classList.toggle("show");

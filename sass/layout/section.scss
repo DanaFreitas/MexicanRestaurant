@@ -1,28 +1,21 @@
 @import "../abstracts/variables.scss";
 
-
-
 .section--sectiondescription {
-    position: absolute; 
-    text-align: center;
-    background-color: $DarkGreenColor;
-  color:white;
-  }
-
-//#openingsection { position:relative;}
-
+  position: absolute;
+  text-align: center;
+  background-color: $DarkGreenColor;
+  color: white;
+}
 
 @media screen and (min-width: 769px) {
   .section__responsivewrapper {
-   
-    
-  display: grid;
-  width:80%;
-  row-gap:1%;
-  column-gap: 5%;
-  grid-template-columns: 1fr 1fr;
-  //grid-template-rows: 1fr 1fr;
-  margin: 10%;
-}
-  
+    display: grid;
+    width: 90%;
+    row-gap: 1%;
+    column-gap: 5%;
+    grid-template-columns: 1fr 1fr;
+
+    margin: auto;
+    margin-top: 10%;
   }
+}

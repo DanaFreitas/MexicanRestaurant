@@ -1,15 +1,16 @@
-
-
 .fieldset {
-    display:flex; flex-direction: column; 
-    //display:grid;grid-template-columns: 10% 20% 70%; justify-items:stretch;
-    margin: auto;
-    width:15rem;
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  width: 14.5rem;
 }
 
+.legend {
+  text-align: center;
+}
 
-
-
-.legend {text-align: center;}
-
-.career__label{padding: 1rem; font-size: 1em;}
+.career__label {
+  padding: 1rem;
+  font-size: 1em;
+}

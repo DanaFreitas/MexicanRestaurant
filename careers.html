@@ -184,88 +184,83 @@
         <label for="name" autofocus>Full Name</label>
         <input type="text" id="name" name="name" placeholder="Type name" />
 
-      <fieldset class="fieldset">
-        <legend class="legend">Job Interest:</legend>
-
-        <section>
-          <section>
-            <input type="radio" id="Cook" name="JobSelection" value="Cook" />
-            <label for="Cook" class="career__label">Cook</label>
-          </section>
+        <fieldset class="fieldset">
+          <legend class="legend">Job Interest:</legend>
 
           <section>
-            <input
-              type="radio"
-              id="Waiter"
-              name="JobSelection"
-              value="Waiter"
-            />
-            <label for="Waiter" class="career__label">Waiter</label>
-          </section>
+            <section>
+              <input type="radio" id="Cook" name="JobSelection" value="Cook" />
+              <label for="Cook" class="career__label">Cook</label>
+            </section>
 
-          <section>
-            <input
-              type="radio"
-              id="Dishwasher"
-              name="JobSelection"
-              value="Dishwasher"
-            />
-            <label for="Dishwasher" class="career__label">Dishwasher</label>
-          </section>
+            <section>
+              <input
+                type="radio"
+                id="Waiter"
+                name="JobSelection"
+                value="Waiter"
+              />
+              <label for="Waiter" class="career__label">Waiter</label>
+            </section>
 
-          <section>
-            <input
-              type="radio"
-              id="ShiftManager"
-              name="JobSelection"
-              value="ShiftManager"
-            />
-            <label for="ShiftManager" class="career__label"
-              >Shift Manager</label
-            >
+            <section>
+              <input
+                type="radio"
+                id="Dishwasher"
+                name="JobSelection"
+                value="Dishwasher"
+              />
+              <label for="Dishwasher" class="career__label">Dishwasher</label>
+            </section>
+
+            <section>
+              <input
+                type="radio"
+                id="ShiftManager"
+                name="JobSelection"
+                value="ShiftManager"
+              />
+              <label for="ShiftManager" class="career__label"
+                >Shift Manager</label
+              >
+            </section>
           </section>
+        </fieldset>
+
+        <section class="formsection--wrapper">
+          <label for="resume">Resume</label>
+          <input
+            type="text"
+            id="resume"
+            name="resume"
+            placeholder="Upload your resume"
+          />
         </section>
-      </fieldset>
 
-      <section class="formsection--wrapper">
-        <label for="resume">Resume</label>
-        <input
-          type="text"
-          id="resume"
-          name="resume"
-          placeholder="Upload your resume"
-        />
+        <section class="formsection--wrapper">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            \
+          />
+        </section>
+
+        <section class="formsection--wrapper">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="xxx-xxx-xxxx"
+            minlength="10"
+            maxlength="10"
+          />
+        </section>
+        <button type="submit" class="form--button" id="submit">Submit</button>
       </section>
-
-      <section class="formsection--wrapper">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          \
-        />
-      </section>
-
-      <section class="formsection--wrapper">
-        <label for="phone">Phone Number</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="xxx-xxx-xxxx"
-          minlength="10"
-          maxlength="10"
-        />
-      </section>
-      <button type="submit" class="form--button" id="submit">Submit</button>
-      <!-- <section class="formsection--formbuttoncontainer">
-       
-   
-      </section> -->
-    </section>
-
     </form>
 
     <footer>
@@ -273,7 +268,8 @@
         <p>Address: 1810 Costilla Street, Boston Ma</p>
         <p>Hours: Monday-Sunday 9am-9pm</p>
         <p>Phone Number: 161-810-271-821</p>
-      </div>       <div id="logowrapper">
+      </div>
+      <div id="logowrapper">
         <img
           src="images/Facebook.png"
           alt="Facebook Logo"

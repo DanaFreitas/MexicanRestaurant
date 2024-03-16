@@ -8,11 +8,12 @@
 @media screen and (min-width: 769px) {
   .section__responsivewrapper {
     display: grid;
-    width: 80%;
+    width: 90%;
     row-gap: 1%;
     column-gap: 5%;
     grid-template-columns: 1fr 1fr;
-    margin: 10%;
+    margin: auto;
+    margin-top: 10%;
   }
 }
 

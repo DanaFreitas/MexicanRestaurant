@@ -610,3 +610,25 @@ column and row gap
 need to fix hero image size. too big on pc
 
 transform scale. nee to fix the padding
+
+
+3/13
+
+make the question section bigger on homepage
+
+Realized problem. The image is portrait. I need landascape. I thought I needed portrait because mobile. but on further inspection, other
+hero images are landscapes that have either most of the image hidden, or resized
+
+the box shadow causes the strange background-color-appear-effect
+the shadow is around the container rather than the element itself      
+        ex, covering th unused section of a flexbox or a grid
+        SOLUTION: used margin instead of padding
+
+
+3/14
+
+Fixed some minor issues. I should be ready to go by the end of the weekend. make sure to check legal stuff.
+
+3/15
+
+For the menus and the catering,should the titles should be part of the list?
