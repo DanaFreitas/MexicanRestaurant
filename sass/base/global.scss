@@ -14,9 +14,7 @@ h2 {
 }
 
 @media screen and (min-width: 1025px) {
-  body {
-    margin: 0 5rem 0 5rem;
-  }
+  
   body .header {
     right: 0%;
   }
@@ -24,3 +22,14 @@ h2 {
 body {
   background-color: #d3d3d3;
 }
+
+
+@media screen and (min-width: 1440px) {
+  body {
+      margin: 0 5rem 0 5rem;
+    }
+}
+
+
+
+

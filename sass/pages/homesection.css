@@ -36,13 +36,9 @@
   box-shadow: none;
   width: 80%;
   aspect-ratio: auto;
+  padding: 1rem;
 }
 
-@media screen and (min-width: 769px) {
-  #WhoWeAre {
-    height: 20vh;
-  }
-}
 #Story--title {
   color: black;
 }
@@ -55,8 +51,9 @@
   aspect-ratio: auto;
   padding: 1.2em;
   margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   font-size: calc(15px + 0.390625vw);
+  border: solid 0.2rem;
 }
 
 .contact__questionmark {
@@ -64,6 +61,7 @@
   flex-direction: row;
   justify-content: space-around;
   font-size: 3rem;
+  padding: 0.3em;
 }
 
 #Anythingtosay {

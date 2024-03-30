@@ -632,3 +632,74 @@ Fixed some minor issues. I should be ready to go by the end of the weekend. make
 3/15
 
 For the menus and the catering,should the titles should be part of the list?
+
+
+3/24
+
+I thought I was done with this project. I thought I was done with it so much. But all of the tests I have been doing have been in vein. When I looked at the results...
+they were all zoomed in. It turns out the text from the mnu doesnt scale the wat it should when the screen width changes.  
+
+the heart of mexico title does. use that for comparison
+        problem! the menu uses vw. the title uses rem. rem more stable.
+                why?
+
+other problems
+        the footer for careers is the only one with a proper width
+        the catering items dont have a proper size compared to the filter
+        the widths of the titles need to be 100 too.
+
+should make sure the widths SHOULD be 100%     
+        Yes
+
+for the section titles, make them 100%
+        and make the title sizes responsive
+for the footer, starting around width:900px, the words are too close together
+        
+3/25
+
+for the proper pages, the margin-top messes everything up, dragging the page down.
+for the bad pages, the margin-top fices everything. is it basd on the positioning of the siblings?
+        ie being absolute or not?
+
+remove some elements from catering to see is its a minimum hieght issue
+My suspicion was corredt. The issue is related to the hieght of the page. 
+I either need to detether the footer from the height OR make the height taller
+
+The laptop dimensions are fine. The vertical ipad is the problem. That is why I didnt notice before. 
+Solution: add more      
+        a description?
+        another image?
+        both?
+
+sent myself an image OutdoorPartyAdjusted 
+Need a description of making sure to send ahead of time. add something positive sounding it not contrast too much with the imagery
+
+
+3/26
+
+I need to adjust the sizing of the img so that it overrides the default
+
+3/27
+
+I need to work with the sizing for the shadows, which is covering the entire page
+
+have a call to action for the opening
+change "contact" to "contact us" in the menu
+
+
+width: min(100%, 48rem);
+is about 769 px
+baically: which is smaller, 100% width or 48rem?
+
+3/28
+
+for the footer, I have been using left, bottom and absolute position to keep the footer from sticking up
+issue is that it effects the text responsiveness
+
+Still having trouble with the footers. differentiate between the really short pages and the longer ones
+
+3/29
+
+The catering footer is messed up at certain levels
+
+the shading is messed up too. the issue is that the ratios of the images alter when responsive

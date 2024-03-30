@@ -1,7 +1,8 @@
+@use "sass:math";
 $DarkRedColor: #a80000;
 
 $DarkGreenColor: #005200;
 
-$MenuAspectRatio: 1 / 1.2;
+$MenuAspectRatio: math.div(1, 1.2);
 
-$MenuAspectRatioResponsive: 1 / 1.4;
+$MenuAspectRatioResponsive: math.div(1, 1.4);

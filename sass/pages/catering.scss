@@ -10,7 +10,21 @@
 
 .catering__food--shade {
   @include ShadedImage;
+  aspect-ratio: 1/ 1.2;
 }
+
+@media screen and (min-width: 769px) {
+  .catering__food--shade {aspect-ratio:.7142857143;
+}}
+
+
+#catering__shade--opening {
+@include ShadedImage;
+  aspect-ratio: 1.5 / 1;
+}
+
+
+
 
 .cateringsection {
   display: flex;
@@ -46,3 +60,30 @@
   word-break: break-word;
   width: 80%;
 }
+
+
+
+#catering__page--description {
+  padding:2.5rem;
+  color:white;
+  position:absolute;
+  z-index: 5;
+}
+
+@media screen and (min-width: 769px) {
+
+.section__cateringopeningwrapper {
+display: flex;
+flex-direction: column;
+aspect-ratio: auto;
+position:relative;}
+
+
+}
+
+#celebrationpicture {
+  width:auto; aspect-ratio: auto;
+  opacity: .3;
+}
+
+

@@ -14,9 +14,6 @@ h2 {
 }
 
 @media screen and (min-width: 1025px) {
-  body {
-    margin: 0 5rem 0 5rem;
-  }
   body .header {
     right: 0%;
   }
@@ -25,6 +22,11 @@ body {
   background-color: #d3d3d3;
 }
 
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 0 5rem 0 5rem;
+  }
+}
 h1 header {
   font-family: rye, serif;
 }
@@ -95,6 +97,7 @@ p {
     font-size: 3rem;
     flex: 1;
     text-align: center;
+    z-index: 3;
   }
 }
 .section--imagecontainer {
@@ -203,7 +206,7 @@ ul {
 }
 .header__defaultmenu--item {
   left: 0;
-  font-size: 1.5em;
+  font-size: 2.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -228,7 +231,6 @@ ul {
     flex-shrink: 0;
     height: 4rem;
     grid-area: p2;
-    padding: 0.5rem;
   }
   .header__responsivemenu--wrapper > * {
     margin: 0.8rem;
@@ -249,13 +251,15 @@ ul {
 
 @media screen and (min-width: 769px) {
   .scrollitem {
-    font-size: 3.5vw;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 form {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 5rem;
+  margin-bottom: 0rem;
 }
 
 form > input {
@@ -312,6 +316,10 @@ legend {
   width: 100%;
 }
 
+#footerwrapper {
+  position: relative;
+}
+
 footer {
   background-color: #005200;
   color: White;
@@ -319,7 +327,14 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 15vh;
+}
+
+.footer--shortpage {
+  margin-top: 17rem;
+}
+
+.footer__wrapper--margin {
+  bottom: 0;
 }
 
 .footer__address {
@@ -328,12 +343,16 @@ footer {
   margin: auto;
 }
 
+.footer__address {
+  width: min(100%, 48rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 @media screen and (min-width: 769px) {
   .footer__address {
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
   }
 }
 .footer--logo {
@@ -360,7 +379,7 @@ footer {
   position: fixed;
   top: 0;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 @media screen and (min-width: 769px) {
@@ -533,13 +552,9 @@ footer {
   box-shadow: none;
   width: 80%;
   aspect-ratio: auto;
+  padding: 1rem;
 }
 
-@media screen and (min-width: 769px) {
-  #WhoWeAre {
-    height: 20vh;
-  }
-}
 #Story--title {
   color: black;
 }
@@ -552,8 +567,9 @@ footer {
   aspect-ratio: auto;
   padding: 1.2em;
   margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   font-size: calc(15px + 0.390625vw);
+  border: solid 0.2rem;
 }
 
 .contact__questionmark {
@@ -561,6 +577,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   font-size: 3rem;
+  padding: 0.3em;
 }
 
 #Anythingtosay {
@@ -651,6 +668,22 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
+  aspect-ratio: 1/1.2;
+}
+
+@media screen and (min-width: 769px) {
+  .catering__food--shade {
+    aspect-ratio: 0.7142857143;
+  }
+}
+#catering__shade--opening {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  aspect-ratio: 1.5/1;
 }
 
 .cateringsection {
@@ -686,6 +719,27 @@ footer {
   font-size: 0.75rem;
   word-break: break-word;
   width: 80%;
+}
+
+#catering__page--description {
+  padding: 2.5rem;
+  color: white;
+  position: absolute;
+  z-index: 5;
+}
+
+@media screen and (min-width: 769px) {
+  .section__cateringopeningwrapper {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: auto;
+    position: relative;
+  }
+}
+#celebrationpicture {
+  width: auto;
+  aspect-ratio: auto;
+  opacity: 0.3;
 }
 
 .fieldset {
