@@ -10,11 +10,10 @@
     display: grid;
     width: 90%;
     row-gap: 1%;
-    column-gap: 5%;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
     grid-template-columns: 1fr 1fr;
     margin: auto;
     margin-top: 10%;
   }
-}
-
-/*# sourceMappingURL=section.css.map */
+}/*# sourceMappingURL=section.css.map */

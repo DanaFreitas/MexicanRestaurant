@@ -703,3 +703,297 @@ Still having trouble with the footers. differentiate between the really short pa
 The catering footer is messed up at certain levels
 
 the shading is messed up too. the issue is that the ratios of the images alter when responsive
+
+4/21
+
+I have returned after working on the standalone base menu. I should be able to comfterably integrate it here. 
+        need to save this version
+
+                did weeks ago
+        have comparisonsss of old and new code next to each other
+               use code compaison tools to make it easier to replaced
+        check if older issues were solved or not 
+
+
+4/22
+
+      <ul id="slidemenu" class="menu_slide" data-menu="default">        
+This is the original restaurant
+
+replaced menuslide with header__defaultmenu--wrapper
+replaced slidemenu with ContainMenu
+
+added <p class="paragraph" data-text="paragraph"
+
+original
+        nav
+                headerwrapper
+                        burgerholder
+                                burgerstuff
+                slidemenu
+                        items
+                responmenu
+                        items
+new
+        navbar
+                headerwrapper
+                        burgerholder
+                                burgerstuff
+                        title
+                        musicbutton
+        containmenu
+                        items
+
+the difference is in the css and js
+        css is good
+
+Need to have containmenu be there onload
+        mobile version is there onload, but the formatting is warped. for some reason, its column instead of row
+
+notable difference. the standalone menu doesnt have a nav while the mexican project does
+
+need to redirect how the hrefs work
+
+
+original event
+
+each button
+
+
+() => {
+  let thehref = fusedMenuArray[i].getAttribute("href");
+  let hrefslice = thehref.slice(1);
+  window.location.href = `${hrefslice}.html`;
+  contain = []
+}
+
+(event) => {
+  event.preventDefault();
+
+  let topRelativeToDocument = getElementPositionRelativeToDocument(
+    section[k]
+  );
+
+  let offsetPosition = topRelativeToDocument - heropadding; //- headerOffset;
+  console.log(
+    `offsetposition ${offsetPosition}  is ${heropadding} minus ${topRelativeToDocument}`
+  );
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+}
+
+new event
+
+headerwrapper
+
+
+() => {
+  let thehref = fusedMenuArray[i].getAttribute("href");
+  let hrefslice = thehref.slice(1);
+  window.location.href = `${hrefslice}.html`;
+  contain = []
+}
+
+
+
+in some capacity, the buttons triggered will work...but ther styles are all malaignefd
+        Uncaught TypeError: can't access property "getAttribute", fusedMenuArray[k] is undefined
+                happens after every time the men is clicked a second time
+                issue is for the respon, theres an array in the array
+
+general issues fro tomorrow:
+        the trdpon buttons only click on another section of the page, not a different page
+        the other pages need to be worked on 
+        there is strange styling for the menu  
+        meed to work one the default and responsive versions of the functions. 
+                need to integrate both the menu and the older code to something new
+remember: github is your friend.
+
+1:51:42
+
+4/23
+
+fusedMenuArray only has 1 thing.
+        Array [ div#headerwrapper.header__default--wrapper ]
+        there should be a bunch of things in the array. no need for seperate default and responsive. so can have a bunch of things
+
+        how menu worked
+
+
+let ContainMenu = document.querySelector('[data-menustate="default"]');
+let ContainMenuId = document.getElementById("ContainMenu");
+let ContainMenuChildren = ContainMenu.children;
+let MenuButton = document.querySelectorAll('[data-button="defaultmenuitem"]');
+
+
+    ContainMenuId.setAttribute("data-menustate", "responsive");
+    ContainMenuId.classList.remove("header__defaultmenu--wrapper");
+    ContainMenuId.classList.add("header__responsivemenu--wrapper");
+
+
+      MenuButton[i].setAttribute("data-button", "responsivemenuitem");
+      MenuButton[i].classList.remove("header__defaultmenu--item");
+      MenuButton[i].classList.add("header__responsivemenu--item");
+
+
+for default, the title is on the bottom and the menu the miflr but vertivslly in ytht mifflr
+
+for default. clicking the first time makes the normal link on the menubuttonns. the animation has been showing up the secon+ time, 
+as I click to exit the deafult meu
+
+
+4/24
+
+containmenuis getting exit at start of animation and enter at the end
+the hamburger is showing show...or not and thats why its working fine
+menuclassexit isnt making anything dissappear
+
+I think im overlapping the burger event vs the menu event
+
+defaultscroll should be defaultbutton and be about linking ot another page     
+        its the burger that handles the animation of the menu
+
+I can use the responsivescroll event to link to other pages. THAT responsive one is better for different sections of the same page.
+THIS one needs to be better for linking to other pages. dont need to use default or responsive diferences. 
+
+4/25
+
+/menu.html for relative links
+#menu for certain section of page
+
+was wrong. that doesnt work for any but one?
+
+issue might be that containmenu isnt properly runningalso the array is in two places. can get rid of the responsive one
+start line 27
+Responsivescroll line 178
+
+4/26
+
+The links work now. I needed to change the html in order to do so. The other pages didnt have proper formatting
+
+
+formatting needed according to prevoius version
+
+<header>
+        <nav></nav>
+        <h1></h1>
+</header>
+
+
+
+fixed. NOw what I need to do is work on the burger. the styles of .header_default--wrapper dont seem to apple to it.
+an important part is the grid so the styles are applied side to side instead of vertically
+
+.header__default--wrapper was missing an underscore
+
+fixed display from flex to grid. but now menu wont show up responsive.
+
+control+mousedown allowing me to change the formatting of the inspecteleemtn
+the issue has somethign to do with it being responsive. 
+        There MIGHT be an issue with the divs being misplaced. in the original, I saw nav, header closers
+        new verion, div, nav, header
+
+        title needs to be removed when responsive 
+'
+fixed. was missing a div.
+
+Need to do another round to check if everythings good
+
+
+
+fix catering pricee
+
+added <main> and <addres>
+
+
+Need to work on the catering text
+The hamburger animation is off
+
+
+difference of headers in both versions
+
+original
+
+
+header
+        navbar
+                headerwrapper
+                        burgerholder
+                                hamburger
+                                        bits
+
+                slidemenu
+                        items
+                responmenu
+                        items
+        h1, title
+        navdefault
+new
+header
+        navbar
+                  headerweapper
+                         burgerholder
+                         hamburger
+                                  bits
+         h1, his title
+                containmenu
+                 the varies menuitems
+
+
+need to move the burgerstuff
+        repeat for other pages
+
+tried. need to d more stuff
+
+have containmenu in navbar
+
+4/27
+
+nvm. it already is in it.
+maybe i need to mvove a title
+
+also issues with the fofrmatting of the elements
+
+when at first miolbe: the burger is horizontal and the animation is fine, but nothing appears
+        when brought to responsive and back to mobile, its vertical, and the menubuttons are off to the side
+        it sort of works when responsive is first
+
+maybe this issue is that containmenu isnt showing up.
+
+data-menustate="responsive" vs default seems to be related
+        responsive is causing nothign to happen. default is causing something, albiet flawed
+
+
+inconsistencies >480px vs >781px, 
+
+fixed those. the first click, the menu appears without animation
+        second causes an animation to appear
+        third. nothing happens
+
+the first click causes menuclassexit, not enter
+
+the burger event is doing 1,3 1,2 etc.
+fixed the enter with a return
+
+Uncaught TypeError: can't access property "setAttribute", MenuButton[i] is undefined line 92.
+
+still not sure how the exit animation should be
+
+didnt have exitanimation style. still need to fix, but there good progress
+
+4/28
+
+
+it turns out the animation duration was 0sec...
+Need to figure out one last bit of animation. 
+        the first click works well.
+        the second does test2 but nothing happens
+        the third does the expected slideout
+        after that its 2,3,2,3,2,3 and everythings fine
+        I suspect the problem is a specific line
+
+4/29
+I...think im done. I just need to do an update and get id of some lines
+

@@ -4,7 +4,7 @@ ul {
   padding: 0;
 }
 
-.menu_slide {
+.header__defaultmenu--wrapper {
   display: none;
 }
 
@@ -28,7 +28,7 @@ ul {
   overflow-x: hidden;
   margin: 0;
   animation-direction: normal;
-  animation-duration: 0s;
+  animation-duration: 0.75s;
   text-align: center;
   margin-top: 4rem;
   color: #a80000;
@@ -52,6 +52,16 @@ ul {
   margin-top: 4rem;
 }
 
+@keyframes menudisappear {
+  0% {
+    transform: translate(0px, 0px);
+    display: block;
+  }
+  100% {
+    transform: translate(-100%, 0px);
+    display: none;
+  }
+}
 @keyframes menuappear {
   0% {
     transform: translate(-500px, 0px);

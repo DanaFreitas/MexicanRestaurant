@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="sass/main.css" type="text/css" />
   </head>
   <body>
-    <header class="header" id="header">
+    <header id="header" class="header" data-section="header">
       <nav>
-        <div id="headerwrapper=" class="header_default--wrapper">
+        <div
+          id="headerwrapper"
+          class="header__default--wrapper"
+          data-headercontainer="default"
+        >
           <div
             id="burgerholder"
             class="header__burgerholder"
@@ -30,243 +34,191 @@
               <div
                 class="header__hamburger--hamburger-bit"
                 id="hamburger-bit-1"
+                data-burger="hamburgerpiece"
               ></div>
+
               <div
                 class="header__hamburger--hamburger-bit"
                 id="hamburger-bit-2"
+                data-burger="hamburgerpiece"
               ></div>
               <div
                 class="header__hamburger--hamburger-bit"
                 id="hamburger-bit-3"
+                data-burger="hamburgerpiece"
               ></div>
             </div>
           </div>
-
         </div>
-        <ul id="slidemenu" class="menu_slide" data-menu="default">
-          <a
-            href="#index"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="0"
-            >Home</a
-          >
-          <a
-            href="#menu"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="1"
-            >Menu</a
-          >
-          <a
-            href="#catering"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="2"
-            >Catering</a
-          >
-          <a
-            href="#location"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="3"
-            >Location</a
-          >
-
-          <a
-            href="#careers"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="4"
-            >Careers</a
-          >
-
-          <a
-            href="#contact"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="5"
-            >Contact</a
-          >
-        </ul>
 
         <ul
-          id="responsivemenu"
-          class="header__responsivemenu--wrapper"
-          data-button="responscrollitem"
+          id="ContainMenu"
+          class="header__defaultmenu--wrapper"
+          data-menustate="default"
         >
           <a
-            href="#index"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
+            href="index.html"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultmenuitem"
             type="button"
-            value="6"
+            value="0"
+            role="menuitem"
             >Home</a
           >
           <a
-            href="#menu"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
+            href="menu.html"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultmenuitem"
             type="button"
-            value="7"
+            value="1"
+            role="menuitem"
             >Menu</a
           >
           <a
-            href="#catering"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
+            href="catering.html"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultmenuitem"
             type="button"
-            value="8"
+            value="2"
+            role="menuitem"
             >Catering</a
           >
           <a
-            href="#location"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
+            href="location.html"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultmenuitem"
             type="button"
-            value="9"
+            value="3"
+            role="menuitem"
             >Location</a
           >
 
           <a
-            href="#careers"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
+            href="careers.html"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultmenuitem"
             type="button"
-            value="10"
+            value="4"
+            role="menuitem"
             >Careers</a
           >
 
           <a
-            href="#contact"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
+            href="contact.html"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultmenuitem"
             type="button"
-            value="11"
+            value="5"
+            role="menuitem"
             >Contact</a
           >
         </ul>
       </nav>
-
-      <h1
-        href="#index"
-        class="title"
-        id="title"
-        data-header="title"
-        type="button"
-      >
-        Heart of Mexico...TESTING TESTING
+      <h1 href="#home" class="title" id="title" type="button">
+        Heart of Mexico
       </h1>
-
-      <nav id="nav__default"></nav>
     </header>
+    <main>
+      <section class="homesection" id="openingsection">
+        <div class="homesection--imagecontainer">
+          <h1 href="#index" id="title2" data-header="title" type="button">
+            Heart of Mexico
+          </h1>
 
-    <section class="homesection" id="openingsection">
-      <div class="homesection--imagecontainer">
-        <h1 href="#index" id="title2" data-header="title" type="button">
-          Heart of Mexico
-        </h1>
+          <div class="homesection__image--shade"></div>
 
-        <div class="homesection__image--shade"></div>
+          <img
+            src="images/MexicanRestaurantResized.jpg"
+            alt="Inside of a Mexican Restaurant"
+            id="buildinginside"
+          />
+        </div>
+        <button id="openingbutton" class="homesection__homepagebutton">
+          Check out our menu here
+        </button>
+      </section>
 
-        <img
-          src="images/MexicanRestaurantResized.jpg"
-          alt="Inside of a Mexican Restaurant"
-          id="buildinginside"
-        />
+      <section class="homesection" id="WhoWeAre" data-text="whoweare">
+        <p class="paragraph" data-text="paragraph">
+          In 2002, Alfondo Diaz came to this country, searching for the American
+          Dream. For 5 years, he worked in a cariety of jobs, from fast food to
+          warehouse work, until he founded heart of Mexico, inspired by his
+          homeland's cuisine. Since then, Heart of Mexico has been a wonderous
+          staple of the community.
+        </p>
+      </section>
+
+      <div class="section__responsivewrapper">
+        <section class="homesection">
+          <div class="homesection__image--shade"></div>
+
+          <h1 class="home__subtitle">Hungry?</h1>
+          <div class="homesection--imagecontainer" id="menufoodcontainer">
+            <img
+              src="images/MenuofMexicanFoodResized.jpg"
+              alt="A table full of Mexican food"
+              id="menufood"
+            />
+          </div>
+
+          <button class="homesection__homepagebutton">View Menu Here</button>
+        </section>
+
+        <section class="homesection">
+          <div class="homesection__image--shade"></div>
+          <h1 class="home__subtitle">Catering</h1>
+          <div class="homesection--imagecontainer">
+            <img
+              src="images/CateringResized.jpg"
+              alt="Tables for golfing food at a party"
+              id="catering"
+            />
+          </div>
+          <button class="homesection__homepagebutton">View Offer Here</button>
+        </section>
+
+        <section class="homesection">
+          <div class="homesection__image--shade"></div>
+          <h1 class="home__subtitle">Find Our Location</h1>
+          <div class="homesection--imagecontainer">
+            <img
+              src="images/Drivingresized.jpg"
+              alt="A woman driving a car"
+              id="location"
+            />
+          </div>
+          <button class="homesection__homepagebutton">Search Here</button>
+        </section>
+
+        <section class="homesection">
+          <div class="homesection__image--shade"></div>
+          <h1 class="home__subtitle">Careers</h1>
+          <div class="homesection--imagecontainer">
+            <img src="images/ChefResized.jpg" alt="A chef" id="careers" />
+          </div>
+          <button class="homesection__homepagebutton">Apply Here</button>
+        </section>
       </div>
-      <button id="openingbutton" class="homesection__homepagebutton">
-        Check out our menu here
-      </button>
-    </section>
 
-    <section class="homesection" id="WhoWeAre">
-      <p>
-        In 2002, Alfondo Diaz came to this country, searching for the American
-        Dream. For 5 years, he worked in a cariety of jobs, from fast food to
-        warehouse work, until he founded heart of Mexico, inspired by his
-        homeland's cuisine. Since then, Heart of Mexico has been a wonderous
-        staple of the community.
-      </p>
-    </section>
-
-    <div class="section__responsivewrapper">
-      <section class="homesection">
-        <div class="homesection__image--shade"></div>
-
-        <h1 class="home__subtitle">Hungry?</h1>
-        <div class="homesection--imagecontainer" id="menufoodcontainer">
-          <img
-            src="images/MenuofMexicanFoodResized.jpg"
-            alt="A table full of Mexican food"
-            id="menufood"
-          />
+      <section class="homesection homesection--contactus">
+        <p>Comments? Questions? Concerns?</p>
+        <div class="contact__questionmark">
+          <p>?</p>
+          <p>?</p>
+          <p>?</p>
         </div>
-
-        <button class="homesection__homepagebutton">View Menu Here</button>
+        <p id="Anythingtosay">If you have anything to say</p>
+        <button id="contactus" class="homesection__homepagebutton">
+          Contact Us
+        </button>
       </section>
-
-      <section class="homesection">
-        <div class="homesection__image--shade"></div>
-        <h1 class="home__subtitle">Catering</h1>
-        <div class="homesection--imagecontainer">
-          <img
-            src="images/CateringResized.jpg"
-            alt="Tables for golfing food at a party"
-            id="catering"
-          />
-        </div>
-        <button class="homesection__homepagebutton">View Offer Here</button>
-      </section>
-
-      <section class="homesection">
-        <div class="homesection__image--shade"></div>
-        <h1 class="home__subtitle">Find Our Location</h1>
-        <div class="homesection--imagecontainer">
-          <img
-            src="images/Drivingresized.jpg"
-            alt="A woman driving a car"
-            id="location"
-          />
-        </div>
-        <button class="homesection__homepagebutton">Search Here</button>
-      </section>
-
-      <section class="homesection">
-        <div class="homesection__image--shade"></div>
-        <h1 class="home__subtitle">Careers</h1>
-        <div class="homesection--imagecontainer">
-          <img src="images/ChefResized.jpg" alt="A chef" id="careers" />
-        </div>
-        <button class="homesection__homepagebutton">Apply Here</button>
-      </section>
-    </div>
-
-    <section class="homesection homesection--contactus">
-      <p>Comments? Questions? Concerns?</p>
-      <div class="contact__questionmark">
-        <p>?</p>
-        <p>?</p>
-        <p>?</p>
-      </div>
-      <p id="Anythingtosay">If you have anything to say</p>
-      <button id="contactus" class="homesection__homepagebutton">
-        Contact Us
-      </button>
-    </section>
-
+    </main>
     <footer>
-      <div class="footer__address">
+      <address class="footer__address">
         <p>Address: 1810 Costilla Street, Boston Ma</p>
         <p>Hours: Monday-Sunday 9am-9pm</p>
         <p>Phone Number: 161-810-271-821</p>
-      </div>
+      </address>
 
       <div id="logowrapper">
         <img

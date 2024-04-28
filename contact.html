@@ -13,169 +13,113 @@
     <link rel="stylesheet" href="sass/main.css" type="text/css" />
   </head>
   <body>
-    <header class="header" id="header">
+    <header id="header" class="header" data-section="header">
       <nav>
-        <div id="headerwrapper=" class="header_default--wrapper">
-          <div
-            id="burgerholder"
-            class="header__burgerholder"
-            data-container="burgerholder"
-          >
+      <div id="headerwrapper"class="header__default--wrapper" data-headercontainer="default">
+              
+        <div id="burgerholder" class="header__burgerholder" data-container="burgerholder">
+      
+          <div type="button" id="hamburger" class="header__hamburger" data-button="hamburger">
+              
             <div
-              type="button"
-              id="hamburger"
-              class="header__hamburger"
-              data-button="hamburger"
-            >
-              <div
-                class="header__hamburger--hamburger-bit"
-                id="hamburger-bit-1"
+              class="header__hamburger--hamburger-bit"
+              id="hamburger-bit-1"
+              data-burger="hamburgerpiece"
+            ></div>
+
+            <div
+              class="header__hamburger--hamburger-bit"
+              id="hamburger-bit-2"
+              data-burger="hamburgerpiece"
+
               ></div>
-              <div
-                class="header__hamburger--hamburger-bit"
-                id="hamburger-bit-2"
-              ></div>
-              <div
-                class="header__hamburger--hamburger-bit"
-                id="hamburger-bit-3"
-              ></div>
-            </div>
+            <div
+              class="header__hamburger--hamburger-bit"
+              id="hamburger-bit-3"
+              data-burger="hamburgerpiece"
+            ></div>
           </div>
-
-     
-        
         </div>
-        <ul id="slidemenu" class="menu_slide" data-menu="default">
-          <a
-            href="#index"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="0"
-            >Home</a
-          >
-          <a
-            href="#menu"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="1"
-            >Menu</a
-          >
-          <a
-            href="#catering"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="2"
-            >Catering</a
-          >
-          <a
-            href="#location"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="3"
-            >Location</a
-          >
+      </div>
+        
 
-          <a
-            href="#careers"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="4"
-            >Careers</a
-          >
-
-          <a
-            href="#contact"
-            class="header__defaultmenu--item scrollitem"
-            data-button="defaultscrollitem"
-            type="button"
-            value="5"
-            >Contact</a
-          >
-        </ul>
-
-        <ul
-          id="responsivemenu"
-          class="header__responsivemenu--wrapper"
-          data-button="responscrollitem"
-        >
-          <a
-            href="#index"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
-            type="button"
-            value="6"
-            >Home</a
-          >
-          <a
-            href="#menu"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
-            type="button"
-            value="7"
-            >Menu</a
-          >
-          <a
-            href="#catering"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
-            type="button"
-            value="8"
-            >Catering</a
-          >
-          <a
-            href="#location"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
-            type="button"
-            value="9"
-            >Location</a
-          >
-
-          <a
-            href="#careers"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
-            type="button"
-            value="10"
-            >Careers</a
-          >
-          <a
-            href="#contact"
-            class="header__responsivemenu--item scrollitem"
-            data-button="responscrollitem"
-            type="button"
-            value="11"
-            >Contact</a
-          >
-        </ul>
-      </nav>
-
-
-
-
-
-
-
-
-
-      <h1
-        href="#index"
-        class="title"
-        id="title"
-        data-header="title"
+      
+      
+      
+      <ul id="ContainMenu" class="header__defaultmenu--wrapper" data-menustate="default">        <a
+        href="index.html"
+        class="header__defaultmenu--item scrollitem"
+        data-button="defaultmenuitem"
         type="button"
+        value="0"
+        role="menuitem"
+
+        >Home</a
       >
-        Heart of Mexico
-      </h1>
+      <a
+        href="menu.html"
+        class="header__defaultmenu--item scrollitem"
+        data-button="defaultmenuitem"
+        type="button"
+        value="1"
+        role="menuitem"
 
-      <nav id="nav__default"></nav>
-    </header>
+        >Menu</a
+      >
+      <a
+        href="catering.html"
+        class="header__defaultmenu--item scrollitem"
+        data-button="defaultmenuitem"
+        type="button"
+        value="2"
+        role="menuitem"
 
+        >Catering</a
+      >
+      <a
+        href="location.html"
+        class="header__defaultmenu--item scrollitem"
+        data-button="defaultmenuitem"
+        type="button"
+        value="3"
+        role="menuitem"
+
+        >Location</a
+      >
+
+      <a
+        href="careers.html"
+        class="header__defaultmenu--item scrollitem"
+        data-button="defaultmenuitem"
+        type="button"
+        value="4"
+        role="menuitem"
+
+        >Careers</a
+      >
+
+      <a
+        href="contact.html"
+        class="header__defaultmenu--item scrollitem"
+        data-button="defaultmenuitem"
+        type="button"
+        value="5"
+        role="menuitem"
+
+        >Contact</a
+      >
+      </ul>
+      </nav>
+      <h1
+      href="#home"
+      class="title"
+      id="title"
+      type="button"
+      > Heart of Mexico </h1
+    >
+
+    </header> 
+<main>
     <h1 class="pagetitle">Contact</h1>
 
     <form action="">
@@ -212,13 +156,13 @@
         </section>
       </section>
     </form>
-
+</main>
     <footer class="footer--shortpage">
-      <div class="footer__address">
+      <address class="footer__address">
         <p>Address: 1810 Costilla Street, Boston Ma</p>
         <p>Hours: Monday-Sunday 9am-9pm</p>
         <p>Phone Number: 161-810-271-821</p>
-      </div>
+      </address>
       <div id="logowrapper">
         <img
           src="images/Facebook.png"
