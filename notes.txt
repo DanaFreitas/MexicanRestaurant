@@ -997,3 +997,21 @@ Need to figure out one last bit of animation.
 4/29
 I...think im done. I just need to do an update and get id of some lines
 
+for google lighthouse, need to
+        resize images 
+        change data types to webp
+        
+Eliminate render-blocking resources 
+efficientlu encode images
+
+Image elements do not have explicit width and height
+Set an explicit width and height on image elements to reduce layout shifts and improve CLS. Learn how to set image dimensionsCLS
+URL
+heart-of-mexico.com 1st Party
+Inside of a Mexican Restaurant
+<img src="images/MexicanRestaurantResized.jpg" alt="Inside of a Mexican Restaurant" id="buildinginside">
+/images/MexicanRestaurantResized.jpg(www.heart-of-mexico.com)
+elements need explicit width andh eihghy
+
+
+4/30

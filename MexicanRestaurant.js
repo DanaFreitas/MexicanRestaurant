@@ -5,9 +5,6 @@ const widths = window.innerWidth;
 
 
 
-//const defaultMenuButton =      document.getElementsByClassName("header__defaultmenu--item");
-//const responsiveMenuButton =   document.getElementsByClassName("header__responsivemenu--item");
-
 let defaultMenuButton = document.querySelectorAll('[data-headercontainer="default"]');
 let responsiveMenuButton = document.querySelectorAll('[data-headercontainer="responsive"]')
 
@@ -21,9 +18,6 @@ let MenuButton = document.querySelectorAll('[data-button="defaultmenuitem"]');
 
 
 const defaultMenuArray = Array.from(defaultMenuButton);
-//const responsiveMenuArray = Array.from(responsiveMenuButton);
-
-//const fusedMenuArray = defaultMenuArray.concat(responsiveMenuArray);
 
 
 
@@ -132,15 +126,6 @@ for (let i = 0; i < MenuButton.length; i++) {
 for (let l = 0; l < MenuButton.length; l++) {
   MenuButton[l].addEventListener("click", (evt) => {
   
-//    ClickMenuItem(evt);
-  
-    // if (widths > 491) {
-    //   Responsivescroll(evt);
-    // } else {
-    //   Defaultscroll(evt);
-    // } 
-  
-    //for (let k = 0; k < MenuButton.length; k++) {
       let thehref = fusedMenuArray[i].getAttribute("href");
       contain.push(thehref);
     
@@ -154,7 +139,7 @@ for (let l = 0; l < MenuButton.length; l++) {
         
   
     });
-//}
+
   })}  
 
 
@@ -163,9 +148,6 @@ for (let l = 0; l < MenuButton.length; l++) {
 function Defaultscroll(evt) {
 
 console.log("Defaultscroll")
-  //document.getElementById("hamburger").classList.toggle("show");
-  //ContainMenu.classList.add("menuclassexit");
-  //ContainMenu.classList.remove("menuclassenter");
 }
 
 
@@ -207,50 +189,6 @@ console.log(fusedMenuArray)
 
 
 
-// for (let i = 0; i < fusedMenuArray.length; i++) {
-//   let thehref = fusedMenuArray[i].getAttribute("href");
-//   contain.push(thehref);
-
-  
-// }
-
-// for (let i = 0; i < fusedMenuArray.length; i++) {
-//   fusedMenuArray[i].addEventListener("click", () => {
-//     let thehref = fusedMenuArray[i].getAttribute("href");
-//     let hrefslice = thehref.slice(1);
-//     window.location.href = `${hrefslice}.html`;
-//     contain = []
-//   });
-// }
-
-
-
-
-
-//for (let k = 0; k < responsiveMenuButton.length; k++) {
-  // responsiveMenuButton[k].addEventListener("click", (event) => {
-  //   event.preventDefault();
-
-  //   let topRelativeToDocument = getElementPositionRelativeToDocument(
-  //     section[k]
-  //   );
-
-  //   let offsetPosition = topRelativeToDocument - heropadding; //- headerOffset;
-  //   console.log(
-  //     `offsetposition ${offsetPosition}  is ${heropadding} minus ${topRelativeToDocument}`
-  //   );
-  //   window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-  // });
-//}
-
-
-
-
-
-
-
-
-
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("show");
@@ -266,21 +204,18 @@ hamburger.addEventListener("click", () => {
 
 
   if (
-    //ContainMenuId.classList.contains("menu_slide") 
-   // ContainMenuId.classList.contains("header__defaultmenu--wrapper") ||
   
     ContainMenuId.classList.contains("menuclassexit")
    
   ) {
-    //ContainMenuId.classList.remove("menu_slide");
-    ContainMenuId.classList.remove("header__defaultmenu--wrapper") //||
+    ContainMenuId.classList.remove("header__defaultmenu--wrapper") 
     ContainMenuId.classList.remove("menuclassexit");
 
     ContainMenuId.classList.add("menuclassenter");
     console.log("test2")
 
   } else if (ContainMenuId.classList.contains("menuclassenter")) {
-   // ContainMenuId.classList.remove("header__defaultmenu--wrapper");
+   
 
     ContainMenuId.classList.remove("menuclassenter");
 
@@ -290,24 +225,13 @@ hamburger.addEventListener("click", () => {
 
     document.getElementById("hamburger").style.width = "";
   
-    //Am i making the wrong thing the width of nothing?   
+   
   }
 });
 
 
 
 
-
-// for (let l = 0; l < defaultMenuButton.length; l++) {
-//   defaultMenuButton[l].addEventListener("click", (event) => {
-//     event.preventDefault();
-    
-//     document.getElementById("hamburger").classList.toggle("show");
-//     ContainMenuId.classList.add("menuclassexit");
-//     ContainMenuId.classList.remove("menuclassenter");
-//     document.getElementById("hamburger").style.width = "";
-//   });
-// }
 
 const keyframesRule = `
       @keyframes myAnimation {
@@ -320,6 +244,3 @@ const keyframesRule = `
       }
     `;
 
-//const ImageGallery = [];
-
-//const ImageBackground = document.getElementsByClassName("imagecontainer");
