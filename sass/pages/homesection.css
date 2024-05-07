@@ -43,10 +43,6 @@
   color: black;
 }
 
-.homesection--imagecontainer {
-  overflow: hidden;
-}
-
 .homesection--contactus {
   aspect-ratio: auto;
   padding: 1.2em;
@@ -66,4 +62,6 @@
 
 #Anythingtosay {
   margin-bottom: 1rem;
-}/*# sourceMappingURL=homesection.css.map */
+}
+
+/*# sourceMappingURL=homesection.css.map */

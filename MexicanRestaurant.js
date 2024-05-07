@@ -11,14 +11,20 @@ let responsiveMenuButton = document.querySelectorAll('[data-headercontainer="res
 let ContainMenuId = document.getElementById("ContainMenu");
 
 
+
 let ContainMenu = document.querySelector('[data-menustate="default"]');
+//let SubmitButton = document.querySelector('[data-button="submit"]');
+let PreviewButton = document.querySelectorAll('[data-button="SectionPreview"]');
+//data-button="SectionPreview"
+
 let ContainMenuChildren = ContainMenu.children;
 
 let MenuButton = document.querySelectorAll('[data-button="defaultmenuitem"]');
 
+let Openingbutton = document.getElementById("openingbutton")
 
-const defaultMenuArray = Array.from(defaultMenuButton);
 
+let MenuArray = Array.from(MenuButton);
 
 
 
@@ -32,7 +38,6 @@ let contain = []
 addEventListener("load", (event) => {
   if (widths > 768) {
     ContainMenuId.setAttribute("data-menustate", "responsive");
-    console.log("testing")
     ContainMenuId.classList.remove("header__defaultmenu--wrapper");
     ContainMenuId.classList.add("header__responsivemenu--wrapper");
 
@@ -108,6 +113,9 @@ title.addEventListener("click", (event) => {
 });
 
 
+Openingbutton/addEventListener("click", (event) => {
+  window.location.href = "menu.html"
+})
 
 
 
@@ -116,22 +124,30 @@ title.addEventListener("click", (event) => {
 
 
 
-for (let i = 0; i < MenuButton.length; i++) {
+
+
+// for (let i = 0; i < MenuButton.length; i++) {
   
-  let thehref = MenuButton[i].getAttribute("href");
-  contain.push(thehref);
+//   let thehref = MenuButton[i].getAttribute("href");
+//   contain.push(thehref);
   
-}
+// }
+
+
+
+
+
+
 
 for (let l = 0; l < MenuButton.length; l++) {
   MenuButton[l].addEventListener("click", (evt) => {
   
-      let thehref = fusedMenuArray[i].getAttribute("href");
+      let thehref = MenuArray[l].getAttribute("href");
       contain.push(thehref);
-    
-    console.log(fusedMenuArray)
-          fusedMenuArray[k].addEventListener("click", (evt) => {
-            let thehref = fusedMenuArray[k].getAttribute("href");
+     console.log(seccuss3)
+    console.log(MenuArray)
+          MenuArray[l].addEventListener("click", (evt) => {
+            let thehref = MenuArray[l].getAttribute("href");
             console.log(thehref)
             let hrefslice = thehref.slice(1);
             window.location.href = `${hrefslice}.html`;
@@ -141,6 +157,44 @@ for (let l = 0; l < MenuButton.length; l++) {
     });
 
   })}  
+
+
+
+  for (let l = 0; l < PreviewButton.length; l++) {
+console.log(PreviewButton[l])
+    PreviewButton[l].addEventListener("click", () => {
+      console.log("SUCCESS1") 
+
+      //  let thehref = PreviewButton[l].getAttribute("href");
+        //contain.push(thehref);
+        //console.log(thehref)
+      //window.location.href= `${thehref}.html`
+
+
+        //console.log(thehref) 
+     // PreviewButton[l].addEventListener("click", (evt) => {
+             // let thehref = PreviewButton[l].getAttribute("href");
+//console.log(thehref) 
+  //           let hrefslice = thehref.slice(1);
+    //          window.location.href = `${hrefslice}.html`;
+      //        contain = []
+          
+    
+  //    });
+  
+    })}  
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -158,9 +212,9 @@ function Responsivescroll(evt) {
   
   
   for (let k = 0; k < MenuButton.length; k++) {
-console.log(fusedMenuArray)
-    fusedMenuArray[k].addEventListener("click", (evt) => {
-      let thehref = fusedMenuArray[k].getAttribute("href");
+console.log(MenuArray)
+    MenuArray[k].addEventListener("click", (evt) => {
+      let thehref = MenuArray[k].getAttribute("href");
       console.log(thehref)
       let hrefslice = thehref.slice(1);
       window.location.href = `${hrefslice}.html`;
@@ -172,12 +226,12 @@ console.log(fusedMenuArray)
 
 
     console.log(MenuButton)
-    console.log(fusedMenuArray)
+    console.log(MenuArray)
     evt.preventDefault();
     MenuButton[k].addEventListener("click", (event) => {
 
 
-      let thehref = fusedMenuArray[k].getAttribute("href");
+      let thehref = MenuArray[k].getAttribute("href");
       contain.push(thehref);
     
       });
@@ -244,3 +298,10 @@ const keyframesRule = `
       }
     `;
 
+
+
+
+
+   //    SubmitButton.addEventListener("click", (evt) => {
+     //    alert("Thank you for submitting.")        
+       //})

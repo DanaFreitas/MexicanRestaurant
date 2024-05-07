@@ -1,7 +1,7 @@
 .homesection__homepagebutton {
   width: 100%;
   background-color: #a80000;
-  font-family: rye;
+  font-family: "Rye", serif;
   border: none;
   position: absolute;
   bottom: 0;
@@ -54,5 +54,8 @@
     flex: 1;
     text-align: center;
     z-index: 3;
+    font-family: "Rye", serif;
   }
-}/*# sourceMappingURL=buttons.css.map */
+}
+
+/*# sourceMappingURL=buttons.css.map */

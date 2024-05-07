@@ -27,14 +27,20 @@ body {
     margin: 0 5rem 0 5rem;
   }
 }
-h1 header {
-  font-family: rye, serif;
-}
-
-p {
+p, li, label {
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+header {
+  font-family: "Rye", serif;
+}
+
+@media screen and (min-width: 769px) {
+  .header__responsivemenu--wrapper > * {
+    font-size: 1.5rem;
+  }
+}
 .text__description {
   width: 80%;
   text-align: center;
@@ -45,7 +51,7 @@ p {
 .homesection__homepagebutton {
   width: 100%;
   background-color: #a80000;
-  font-family: rye;
+  font-family: "Rye", serif;
   border: none;
   position: absolute;
   bottom: 0;
@@ -98,6 +104,7 @@ p {
     flex: 1;
     text-align: center;
     z-index: 3;
+    font-family: "Rye", serif;
   }
 }
 .section--imagecontainer {
@@ -261,7 +268,6 @@ ul {
 
 @media screen and (min-width: 769px) {
   .scrollitem {
-    font-size: 2rem;
     text-align: center;
   }
 }
@@ -567,10 +573,6 @@ footer {
 
 #Story--title {
   color: black;
-}
-
-.homesection--imagecontainer {
-  overflow: hidden;
 }
 
 .homesection--contactus {

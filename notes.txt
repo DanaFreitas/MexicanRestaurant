@@ -1011,7 +1011,60 @@ heart-of-mexico.com 1st Party
 Inside of a Mexican Restaurant
 <img src="images/MexicanRestaurantResized.jpg" alt="Inside of a Mexican Restaurant" id="buildinginside">
 /images/MexicanRestaurantResized.jpg(www.heart-of-mexico.com)
-elements need explicit width andh eihghy
+elements need explicit width andh height
 
 
-4/30
+5/2 ise shortpixel for web compression AND to switch file types
+
+5/3 loseless vs lossy
+
+kilo-mega-giga
+essay-song-episode
+
+used shortpixel to shrink AND convert to webp
+
+
+5/5
+
+files upload
+
+I need to resize the header text with a new fontI will need to have it be responsive
+issue. I need to make responsive 1.5rem and default 2. But I cant have them interfere with each other
+
+
+Home
+
+
+   <a
+            href="menu.html"
+            class="header__defaultmenu--item scrollitem"
+            data-button="defaultmenuitem"
+            type="button"
+            value="1"
+            role="menuitem"
+            >Menu</a
+          >
+
+
+
+make a function for the links
+have a popup if you click the submit button for the careers and contract buttons
+
+did the former
+
+need to do something about fusedMenuArray
+        replace with  default?
+        is that why the function idnt working?
+
+
+5/5
+
+replaced with a term. an issue is that there were some for loop bariables that needed to be renamed
+
+5/6
+
+every image is shown in opeening except hungry? it jas a different wrapper
+
+homesection--imagecontainer is involced in the images that ARE visible
+
+Uncaught TypeError: can't access property "setAttribute", MenuButton[i] is undefined

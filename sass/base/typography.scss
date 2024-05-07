@@ -1,10 +1,29 @@
-h1 header {
-  font-family: rye, serif;
+//h1 header {
+//  font-family: rye, serif;
+//}
+
+p, li, label {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-p {
-  text-align: center;
+header {
+//  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Rye", serif;
+ //font-size:2rem;  
+  
+      //width: min(100vw, 85%);
+//font-size: min(100vw,85%);
 }
+
+
+@media screen and (min-width: 769px) {
+  .header__responsivemenu--wrapper > *{ font-size: 1.5rem;
+  }
+}
+
+
+
 
 .text__description {
   width: 80%;
