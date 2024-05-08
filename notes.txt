@@ -1068,3 +1068,24 @@ every image is shown in opeening except hungry? it jas a different wrapper
 homesection--imagecontainer is involced in the images that ARE visible
 
 Uncaught TypeError: can't access property "setAttribute", MenuButton[i] is undefined
+
+6/7
+
+Im confident I just need to update the git version
+
+make title button in mobile version
+
+made the button for the header. now need to work on the sections
+
+I got the menubuttons work
+
+now animate the slider. go to the meuidisappear page to alter the menusliding animation. the duration has been lengthened already
+...
+
+or would be. something is worn giwth line 188 of the js "openingbutton is null". cant access the eventlistener property
+
+make sure to compress images when exporting
+
+made change to restautant image. removed about 1 metabyte by compressing from 90% to 80% cpaacity. . 
+
+preload google fonts for rending help

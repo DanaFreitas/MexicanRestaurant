@@ -41,12 +41,22 @@
   color: yellow;
 }
 
-#title2 {
+#title {
+  background-color: $DarkGreenColor;
+  border:none;
+}
+
+#title:hover {
+  color: yellow;
+}
+
+
+#herotitle {
   display: none;
 }
 
 @media screen and (min-width: 769px) {
-  #title2 {
+  #herotitle {
     display: block;
     width: 100%;
     background-color: $DarkRedColor;

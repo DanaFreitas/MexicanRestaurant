@@ -89,12 +89,21 @@ header {
   color: yellow;
 }
 
-#title2 {
+#title {
+  background-color: #005200;
+  border: none;
+}
+
+#title:hover {
+  color: yellow;
+}
+
+#herotitle {
   display: none;
 }
 
 @media screen and (min-width: 769px) {
-  #title2 {
+  #herotitle {
     display: block;
     width: 100%;
     background-color: #a80000;
@@ -174,7 +183,7 @@ ul {
   background-color: #d3d3d3;
   color: black;
   height: 100%;
-  width: 100%;
+  width: 50%;
   top: 0;
   overflow-x: hidden;
   margin: 0;
@@ -193,7 +202,7 @@ ul {
   background-color: #d3d3d3;
   color: black;
   height: 100%;
-  width: 100%;
+  width: 50%;
   top: 0;
   overflow-x: hidden;
   margin: 0;

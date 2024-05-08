@@ -1,6 +1,7 @@
 const hamburger = document.getElementById("hamburger");
 const holder = document.getElementById("burgerholder");
 const title = document.getElementById("title");
+console.log(title)
 const widths = window.innerWidth;
 
 
@@ -109,11 +110,12 @@ ContainMenu.classList.remove('header__defaultmenu--wrapper')
 
 
 title.addEventListener("click", (event) => {
+ console.log("I LOVE MONKEYS")
   window.location.href = "index.html";
 });
 
 
-Openingbutton/addEventListener("click", (event) => {
+Openingbutton.addEventListener("click", (event) => {
   window.location.href = "menu.html"
 })
 
@@ -165,10 +167,10 @@ console.log(PreviewButton[l])
     PreviewButton[l].addEventListener("click", () => {
       console.log("SUCCESS1") 
 
-      //  let thehref = PreviewButton[l].getAttribute("href");
-        //contain.push(thehref);
-        //console.log(thehref)
-      //window.location.href= `${thehref}.html`
+        let thehref = PreviewButton[l].getAttribute("href");
+        contain.push(thehref);
+        console.log(thehref)
+      window.location.href= `${thehref}`
 
 
         //console.log(thehref) 
