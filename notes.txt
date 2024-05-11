@@ -1089,3 +1089,29 @@ make sure to compress images when exporting
 made change to restautant image. removed about 1 metabyte by compressing from 90% to 80% cpaacity. . 
 
 preload google fonts for rending help
+
+5/8
+
+rhw fibt addubg dudbt woork, need dufferent approach. connected to poor loading 88 %
+worked on gogole font
+
+
+5/9 keep working on fonts
+
+neeeded exta ../ the first only brought me to th 7-1 folders
+
+read about image compression
+
+have multilpe images
+        2x of diplay dixr
+        squoosh.app looks promising
+
+5/10
+
+practiced photopea
+mobile lighthouse
+        need to reallly shrink images
+pc lighthouse  
+        [role]
+both    
+        aspect ratio needs to be fixed

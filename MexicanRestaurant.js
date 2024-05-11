@@ -1,3 +1,16 @@
+// //Load the font
+// font.load().then(
+//   () => {
+//     // Resolved - add font to document.fonts
+//   },
+//   (err) => {
+//     console.error(err);
+//   },
+// );
+
+
+
+
 const hamburger = document.getElementById("hamburger");
 const holder = document.getElementById("burgerholder");
 const title = document.getElementById("title");

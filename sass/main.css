@@ -27,6 +27,14 @@ body {
     margin: 0 5rem 0 5rem;
   }
 }
+/* rye-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rye";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Rye/rye-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 p, li, label {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
