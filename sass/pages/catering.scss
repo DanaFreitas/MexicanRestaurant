@@ -14,8 +14,10 @@
 }
 
 @media screen and (min-width: 769px) {
-  .catering__food--shade {aspect-ratio:.7142857143;
-}}
+  .catering__food--shade {aspect-ratio: 1 / 1.5;
+    //aspect-ratio:.7142857143;
+}
+}
 
 
 #catering__shade--opening {

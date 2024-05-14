@@ -6,9 +6,21 @@
 }
 @mixin ShadedImage() {
   width: 100%;
-  aspect-ratio: 1/1.2;
+ // aspect-ratio: 1/1.2;
+ aspect-ratio: 1 / 1.5;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+@mixin MenuAspectRatio() {
+  aspect-ratio: 1 / 1.5;
+
+}
+
+@mixin MenuAspectRatioResponsive() {
+  aspect-ratio: 1 / 1.5;
+
 }

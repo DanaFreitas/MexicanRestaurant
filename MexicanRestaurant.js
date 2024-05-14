@@ -128,11 +128,15 @@ title.addEventListener("click", (event) => {
 });
 
 
+if (Openingbutton) {
+
 Openingbutton.addEventListener("click", (event) => {
   window.location.href = "menu.html"
 })
 
-
+} else {
+  console.error("Element with ID 'openingbutton' not found.");
+}
 
 
 
@@ -256,10 +260,11 @@ console.log(MenuArray)
 
 
 
-
+console.log(hamburger)
 
 
 hamburger.addEventListener("click", () => {
+  console.log(hamburger)
   hamburger.classList.toggle("show");
 
   if (

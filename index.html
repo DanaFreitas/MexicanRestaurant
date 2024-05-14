@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="images/MexicanRestaurantLarge.webp" imagesizes="1974w" />
     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
       rel="stylesheet"
@@ -130,10 +131,14 @@
           <div class="homesection__image--shade"></div>
 
           <img
+          
+          srcset="images/MexicanRestaurant.webp 792w, images/MexicanRestaurantLarge.webp 1974w"
+          sizes="(max-width: 494px) auto,
+                100%"
             src="images/MexicanRestaurant.webp"
             alt="Inside of a Mexican Restaurant"
             id="buildinginside"
-            width="320"
+            width="494"
             height="auto"
           />
         </div>

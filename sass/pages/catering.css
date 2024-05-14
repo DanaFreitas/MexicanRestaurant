@@ -8,7 +8,7 @@
 
 .catering__food--shade {
   width: 100%;
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1.5;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
@@ -18,12 +18,12 @@
 
 @media screen and (min-width: 769px) {
   .catering__food--shade {
-    aspect-ratio: 0.7142857143;
+    aspect-ratio: 1/1.5;
   }
 }
 #catering__shade--opening {
   width: 100%;
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1.5;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;

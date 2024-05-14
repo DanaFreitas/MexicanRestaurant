@@ -18,8 +18,9 @@
 
 .menu__food--shade {
   width: 100%;
-  aspect-ratio: $MenuAspectRatio;
-  background: rgba(0, 0, 0, 0.99);
+ // aspect-ratio: $MenuAspectRatio;
+ aspect-ratio: 1 / 1.5;
+ background: rgba(0, 0, 0, 0.99);
   position: absolute;
   top: 0;
   left: 0;
@@ -27,7 +28,8 @@
 
 @media screen and (min-width: 769px) {
   .menu__food--shade {
-    aspect-ratio: $MenuAspectRatioResponsive;
+    aspect-ratio: 1 / 1.5;
+    // $MenuAspectRatioResponsive;
   }
 }
 

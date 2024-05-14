@@ -1115,3 +1115,98 @@ pc lighthouse
         [role]
 both    
         aspect ratio needs to be fixed
+
+5/11
+
+need ot use responsive images using srcset
+using srcset. testing the image sizes responsively. there is some success. need to have be properly fine tuned 
+
+MAKE SURE the mobile images are sized to be 792 px wide at LARGEST. some can be smaller. figure them out. 
+
+5/12
+
+for the menu. there are lots of issues with the fajitas and the corn salad being landscape om portrait frames
+
+
+5/13
+
+
+need to have corn salad and nachos be higher resolution
+make sure to test in gogole incognito
+cant test a bunh of pages at once
+
+index-mobile
+
+86
+
+Avoid large layout shifts 2 layout shifts found
+Largest Contentful Paint element 2,860 ms
+Properly size images Potential savings of 37 KiB
+Eliminate render-blocking resources Potential savings of 380 ms
+Page prevented back/forward cache restoration 1 failure reason
+
+
+menu
+
+Largest Contentful Paint element 2,700 ms
+Eliminate render-blocking resources Potential savings of 450 ms
+Page prevented back/forward cache restoration 1 failure reason
+
+catering
+
+good!
+
+location
+
+good!
+
+careers
+
+good!
+
+contact
+
+good!
+
+additional notes: the hamburger doesnt work outside the index
+the titles are a bit hidden when under the wrong sizes
+
+index- responsive
+
+good!
+
+menu 
+
+good!
+
+catering
+
+good!
+
+location
+
+good!
+
+careers
+
+good!
+
+contact
+
+good!
+
+
+Figured out with preloading
+
+additional notes: the hamburger doesnt work outside the index
+the titles are a bit hidden when under the wrong sizes
+are the problems
+
+
+Openingbutton.addEventListener("click", (event) => {
+  window.location.href = "menu.html"
+})
+
+Needed an if statement to make the other burgers work. there was an error 
+
+added 1.5 em
